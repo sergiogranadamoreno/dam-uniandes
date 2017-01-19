@@ -1,0 +1,627 @@
+
+/* IMPORT */
+@import url(https://fonts.googleapis.com/css?family=Play); /* play font */
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+/* FONTS UNIANDES */
+/* Icon Font */
+@font-face {
+    font-family: 'themes-Regular';
+    src: url('http://assets.virbcdn.com/_assets/_fonts/_icons/themes-regular.eot');
+    src: url('http://assets.virbcdn.com/_assets/_fonts/_icons/themes-regular.eot?#iefix') format('embedded-opentype'),
+         url('http://assets.virbcdn.com/_assets/_fonts/_icons/themes-regular.woff') format('woff'),
+         url('http://assets.virbcdn.com/_assets/_fonts/_icons/themes-regular.ttf') format('truetype'),
+         url('http://assets.virbcdn.com/_assets/_fonts/_icons/themes-regular.svg#global-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('http://assets.virbcdn.com/_assets/_fonts/Quicksand_Book-webfont.eot');
+    src: url('http://assets.virbcdn.com/_assets/_fonts/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'),
+    url('http://assets.virbcdn.com/_assets/_fonts/Quicksand_Book-webfont.woff') format('woff'),
+    url('http://assets.virbcdn.com/_assets/_fonts/Quicksand_Book-webfont.ttf') format('truetype'),
+    url('http://assets.virbcdn.com/_assets/_fonts/Quicksand_Book-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: 'Cantarell';
+    src: url('http://assets.virbcdn.com/_assets/_fonts/Cantarell-Regular-webfont.eot');
+    src: url('http://assets.virbcdn.com/_assets/_fonts/Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('http://assets.virbcdn.com/_assets/_fonts/Cantarell-Regular-webfont.woff') format('woff'),
+    url('http://assets.virbcdn.com/_assets/_fonts/Cantarell-Regular-webfont.ttf') format('truetype'),
+    url('http://assets.virbcdn.com/_assets/_fonts/Cantarell-Regular-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Icon Fonts */
+@font-face {
+    font-family: 'nautilus-regular';
+    src: url('http://assets.virbcdn.com/_assets/_fonts/_icons/nautilus-regular.eot');
+    src: url('http://assets.virbcdn.com/_assets/_fonts/_icons/nautilus-regular.eot?#iefix') format('embedded-opentype'),
+    url('http://assets.virbcdn.com/_assets/_fonts/_icons/nautilus-regular.woff') format('woff'),
+    url('http://assets.virbcdn.com/_assets/_fonts/_icons/nautilus-regular.ttf') format('truetype'),
+    url('http://assets.virbcdn.com/_assets/_fonts/_icons/nautilus-regular.svg#nautilus-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* BACKGROUND IMAGES */
+
+body {
+
+
+
+
+}
+
+/* COLORS */
+
+/* Body */
+body {
+    background-color: #ffffff;
+}
+
+
+/* Widget BG */
+footer {
+    background-color: #ffffff;
+}
+
+/* OTHER LAYOUT STYLES */
+
+.header-cont {
+    color: #000000;
+    width:100%;
+    position:absolute;
+    top:0px;
+  }
+
+.link {
+background-color: transparent;
+list-style-type: none;
+display: inline-block;
+
+}
+
+    a:link    {color:black; background-color:transparent; text-decoration:none}
+    a:visited {color:black; background-color:transparent; text-decoration:none}
+    a:hover   {color:#202733; background-color:transparent; text-decoration:none}
+    a:active  {color:black; background-color:transparent; text-decoration:none}
+
+
+/* soundcloud players*/
+
+iframe { display: inline; }
+
+.player {
+  margin:0 auto;
+  padding-bottom: 0cm;
+  cursor: pointer;
+  height: 200px;
+  width: 100%;
+}
+
+.v-player {
+  margin:0 auto;
+  padding-bottom: 5cm;
+  cursor: pointer;
+  height: 200px;
+  width: 100%;
+}
+
+
+/* h1 is the title*/
+
+h1 {
+  color: #202733;
+  margin: -1cm 2cm 0cm 2cm;
+  background-color: transparent;
+  font-size: 24px;
+  font-family: 'Quicksand';
+  text-align: left;
+  text-shadow: 1px 0.9px #A9A9A9;
+  border-style: hidden;
+  display: inline-block;
+}
+
+h2 {
+  color: transparent;
+  margin: 0cm 0cm 0cm 2cm;
+  padding-left: 0cm;
+  font-family: 'Quicksand';
+  font-size: 12px;
+  background-color: transparent;
+  text-align: left;
+  text-decoration: none;
+  border-style: hidden;
+	display: inline-block;
+}
+
+/* h3 contains the social media icons*/
+h3 {
+  color: transparent;
+  font-family: 'Quicksand';
+  margin: 0cm 0cm 0cm 2cm;
+  display: block;
+}
+
+#social-media-icons img {
+  display: inline-block;
+  max-width: 3.5%;
+  max-height: 3%;
+  padding: 0px;
+  display: block;
+}
+
+}
+
+h5 {
+  color: #202733;
+  margin: 0cm 0cm 0cm 0.2cm;
+  padding-right: 31.4cm;
+  letter-spacing: -2px;
+  font-size: 15px;
+  background-color: transparent;
+  font-family: 'Quicksand';
+  text-align: right;
+  border-style: hidden;
+  display: block;
+
+}
+
+content {
+    letter-spacing: -1px;
+    font-family: 'Quicksand';
+    font-size: 16px;
+    background-color: transparent;
+    font-family: 'Play', sans-serif;
+    text-align: left;
+  }
+
+footer {
+  margin: 0cm 0cm 0cm 0cm;
+  position: absolute;
+  left: 80px;
+  color: #202733;
+  padding-top: 1.1cm;
+  letter-spacing: 2px;
+  font-size: 15px;
+  background-color: transparent;
+  font-family: 'Play', sans-serif;
+  text-shadow: 1px 0.9px #A9A9A9;
+}
+
+/* Text elements */
+p {
+	padding-top: 1.1cm;
+	margin: 0cm 2cm 0cm 2cm;
+	text-align: justify;
+	font-family: 'Play', sans-serif;
+	font-size: 20px;
+	letter-spacing: 0px;
+	line-height: 20px
+
+}
+
+blockquote {
+	font-family: 'Quicksand';
+	font-style: italic;
+	font-weight: normal;
+	margin: 0cm 2cm 0cm 2cm;
+}
+
+ul, ol {
+	font-family: 'Quicksand';
+	margin: 0cm 3cm 0cm 2cm;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0px;
+	line-height: 40px
+}
+ul {
+	list-style: square;
+}
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0 1.625em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.625em;
+}
+strong {
+	font-weight: bold;
+}
+cite, em, i {
+	font-style: italic;
+}
+
+blockquote em, blockquote i, blockquote cite {
+	font-style: normal;
+}
+blockquote cite {
+	color: #666;
+	font-family: 'Quicksand';
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+pre {
+	background: #f4f4f4;
+	font-family: 'Quicksand';
+	line-height: 1.5;
+	margin: 0cm 2cm 0cm 2cm;
+	margin-bottom: 1.625em;
+	overflow: auto;
+	padding: 0.75em 1.625em;
+}
+code, kbd, samp, var {
+	font-family: 'Quicksand';
+}
+abbr, acronym, dfn {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+address {
+	display: block;
+	margin: 0 0 1.625em;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 10px;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+small {
+	font-size: smaller;
+}
+
+/* Forms */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=number],
+textarea {
+	background: #fafafa;
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	border: 1px solid #ddd;
+	color: #888;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=number]:focus,
+textarea:focus {
+	color: #373737;
+}
+textarea {
+	padding-left: 3px;
+	width: 98%;
+}
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=number] {
+	padding: 3px;
+}
+input#s {
+	background: url(images/search.png) no-repeat 5px 6px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 14px;
+	height: 22px;
+	line-height: 1.2em;
+	padding: 4px 10px 4px 28px;
+}
+input#searchsubmit {
+	display: none;
+}
+
+/* Links */
+a {
+	color: #1982d1;
+	text-decoration: none;
+}
+a:focus,
+a:active,
+a:hover {
+	text-decoration: underline;
+}
+
+/* Assistive text */
+.assistive-text,
+.screen-reader-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+}
+#access a.assistive-text:focus,
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	color: #1982d1;
+	clip: auto !important;
+	font-size: 12px;
+	height: auto;
+	position: absolute;
+	text-decoration: underline;
+	top: 0;
+	left: 7.6%;
+	width: auto;
+}
+
+
+
+/* =Header
+----------------------------------------------- */
+
+#branding {
+	border-top: 2px solid #bbb;
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 9999;
+}
+#site-title {
+	margin-right: 270px;
+	padding: 3.65625em 0 0;
+}
+#site-title a {
+	color: #111;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 0px;
+	text-decoration: none;
+}
+#site-title a:hover,
+#site-title a:focus,
+#site-title a:active {
+	color: #1982d1;
+}
+#site-description {
+	color: #7a7a7a;
+	font-size: 14px;
+	margin: 0 270px 3.65625em 0;
+}
+#branding img {
+	height: auto;
+	display: block;
+	width: 100%;
+}
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+
+	background: #222; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#252525, #0a0a0a);
+	background: -o-linear-gradient(#252525, #0a0a0a);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#252525, #0a0a0a);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	font-family: 'Quicksand';
+	clear: both;
+	display: block;
+	float: left;
+	margin: 0 auto 6px;
+	width: 100%;
+}
+#access ul {
+	font-size: 18px;
+	list-style: none;
+	font-family: 'Quicksand';
+	font-size: 18px;
+	letter-spacing: 0px;
+	margin: 0 0 0 -0.8125em;
+	padding-left: 2cm;
+}
+#access li {
+	float: left;
+	position: relative;
+	font-family: 'Quicksand';
+}
+#access a {
+	color: #eee;
+	display: block;
+	line-height: 3.333em;
+	padding: 0 1.2125em;
+	text-decoration: none;
+	font-family: 'Quicksand';
+}
+#access ul ul {
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	display: none;
+	float: left;
+	margin: 0;
+	position: absolute;
+	top: 3.333em;
+	left: 0;
+	width: 188px;
+	z-index: 99999;
+	font-family: 'Quicksand';
+}
+#access ul ul ul {
+	left: 100%;
+	top: 0;
+	font-family: 'Quicksand';
+}
+#access ul ul a {
+	background: #f9f9f9;
+	border-bottom: 1px dotted #ddd;
+	color: #444;
+	font-size: 13px;
+	font-weight: normal;
+	height: auto;
+	line-height: 1.4em;
+	padding: 10px 10px;
+	width: 168px;
+	font-family: 'Quicksand';
+}
+#access li:hover > a,
+#access ul ul :hover > a,
+#access a:focus {
+	background: #efefef;
+}
+#access li:hover > a,
+#access a:focus {
+	background: #f9f9f9; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
+	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+	color: #373737;
+	font-family: 'Quicksand';
+}
+#access ul li:hover > ul {
+	display: block;
+}
+#access .current-menu-item > a,
+#access .current-menu-ancestor > a,
+#access .current_page_item > a,
+#access .current_page_ancestor > a {
+	font-weight: bold;
+}
+
+/* Search Form */
+#branding #searchform {
+	position: absolute;
+	top: 3.8em;
+	right: 7.6%;
+	text-align: right;
+}
+#branding #searchform div {
+	margin: 0;
+}
+#branding #s {
+	float: right;
+	-webkit-transition-duration: 400ms;
+	-webkit-transition-property: width, background;
+	-webkit-transition-timing-function: ease;
+	-moz-transition-duration: 400ms;
+	-moz-transition-property: width, background;
+	-moz-transition-timing-function: ease;
+	-o-transition-duration: 400ms;
+	-o-transition-property: width, background;
+	-o-transition-timing-function: ease;
+	width: 72px;
+}
+#branding #s:focus {
+	background-color: #f9f9f9;
+	width: 196px;
+}
+#branding #searchsubmit {
+	display: none;
+}
+#branding .only-search #searchform {
+	top: 5px;
+	z-index: 1;
+}
+#branding .only-search #s {
+	background-color: #666;
+	border-color: #000;
+	color: #222;
+}
+#branding .only-search #s,
+#branding .only-search #s:focus {
+	width: 85%;
+}
+#branding .only-search #s:focus {
+	background-color: #bbb;
+}
+#branding .with-image #searchform {
+	top: auto;
+	bottom: -27px;
+	max-width: 195px;
+}
+#branding .only-search + #access div {
+	padding-right: 205px;
+}
+
+
+
+/* Target small devices. As long as this section comes last in your CSS it will overwrite the previous rules. */
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+   /* CSS overrides for mobile here */
+}
+
+@media only screen and (max-device-width: 480px) {
+		div#body {
+			width: 400px;
+		}
+
+		div#header h1 {
+			font-size: 16px;
+		}
+
+		div#header h2 {
+			color: transparent;
+  			margin: 0cm 0cm 0cm 0cm;
+ 			padding-left: 1.5cm;
+  			letter-spacing: 0.5px;
+			font-size: 14px;
+			background-color: transparent;
+			font-family: "Lucida Console", Monaco, monospace;
+			text-align: left;
+			text-decoration: none;
+			border-style: hidden;
+		}
+
+		#content {
+			letter-spacing: -1px;
+			font-size: 12px;
+			background-color: transparent;
+			font-family: 'Play', sans-serif;
+			text-align: left;
+		}
+
+		#navigation {
+			float:none;
+			width: auto;
+		}
+	}
