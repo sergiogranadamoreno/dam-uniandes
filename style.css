@@ -1,11 +1,9 @@
 
-/* IMPORT */
+/* IMPORT FONTS */
 @import url(https://fonts.googleapis.com/css?family=Play); /* play font */
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-/* FONTS UNIANDES */
-/* Icon Font */
 @font-face {
     font-family: 'themes-Regular';
     src: url('http://assets.virbcdn.com/_assets/_fonts/_icons/themes-regular.eot');
@@ -25,7 +23,8 @@
     url('http://assets.virbcdn.com/_assets/_fonts/Quicksand_Book-webfont.svg#webfont') format('svg');
     font-weight: normal;
     font-style: normal;
-}@font-face {
+}
+@font-face {
     font-family: 'Cantarell';
     src: url('http://assets.virbcdn.com/_assets/_fonts/Cantarell-Regular-webfont.eot');
     src: url('http://assets.virbcdn.com/_assets/_fonts/Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -35,7 +34,6 @@
     font-weight: normal;
     font-style: normal;
 }
-/* Icon Fonts */
 @font-face {
     font-family: 'nautilus-regular';
     src: url('http://assets.virbcdn.com/_assets/_fonts/_icons/nautilus-regular.eot');
