@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<!--               head               -->
+<head>
+  <meta charset="utf-8">
+  <meta name="index" content="Sergio Granada-Moreno Portfolio">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title> Diseño de aplicaciones musicales</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="http://sergiogranadamoreno.tk/">
+	<link href="http://musica.uniandes.edu.co/">
+	<link href="http://uniandes.edu.co/">
+	<link href="http://sergiogranadamoreno.tk/">
+  <link href="https://www.zotero.org/groups/uniandes-dam/items">
+
+	<!-- IE Mobile 10.0 rendering bug fix -->
+    <script>(function(){if("-ms-user-select"in document.documentElement.style&&navigator.userAgent.match(/IEMobile\/10\.0/)){var a=document.createElement("style");a.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));document.getElementsByTagName("head")[0].appendChild(a)}})();</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="revisit-after" content="3 days" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Diseño de aplicaciones musicales" />
+    <meta property="og:url" content="http://dam.uniandes.edu.co" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://i.imgsafe.org/98b3b7c893.png" />
+
+  </head>
+<!--               body               -->
+<body>
+
+	    <header id="site-header" class="group">
+
+	        <div class="logo">
+            
+          <form method="get" id="searchform" action="http://sites.uci.edu/iap2015/">
+          <label for="s" class="assistive-text">Search</label>
+          <input type="text" class="field" name="s" id="s" placeholder="Search" />
+          <input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+          </form>
+
+          <nav id="access" role="navigation">
+          <h3 class="assistive-text">Main menu</h3>
+          <div class="skip-link"><a class="assistive-text" href="#content">Skip to primary content</a></div>
+          <div class="menu-main-menu-container">
+          <ul id="menu-main-menu" class="menu"><li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="index.html"> Currículo </a></li>
+          <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="Guia.html">Guía rápida</a></li>
+          <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="Tutoriales.html">Tutoriales</a></li>
+          <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-31"><a href="Ejemplos.html">Enalces web</a></li>
+          <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="Links.html">Lectura sugerida</a></li>
+          <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="Bibliografía.html">Bibliografía</a></li>
+          <li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="Contacto.html">Contacto</a></li>
+          </ul></div>     </nav><!-- #access -->
+	        </div>
+	    </header>
+			
+      <p><b><br><br><br><br>Guía rápida para comenzar a programar en Max 7</b></p>
+
+      <p>Para comenzar a programar Max siga las siguientes instrucciones:</p>
+
+      <p><b>1. Descargue e instale Max 7.</b> Puede encontrar las últimas versiones (en 32 y 64 bits) en el sitio web de Cycling74 <a href="https://cycling74.com/downloads" target="_blank">https://cycling74.com/downloads</a>: </p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Z7BHEDCIATA" frameborder="0" allowfullscreen></iframe></p>
+
+      <p>Ejecute el instalador y siga las instrucciones:</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/xyicd5B331E" frameborder="0" allowfullscreen></iframe></p>
+      <p><b>2. Configure su interfaz de audio.</b> Para seleccionar su interfaz y configurar sus preferencias de audio seleccione el ítem "Audio Status" dentro del menú de Opciones ("Options"):</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/9kpgN7fhQrM" frameborder="0" allowfullscreen></iframe></p>
+
+      <p>Probablemente esta ventana le resulte familiar si ha utilizado software musical anteriormente (p. ej. <a href="http://www.avid.com/pro-tools" target="_blank">Pro Tools</a>, <a href="https://www.ableton.com/en/">Ableton Live</a>). A continuación algunas recomendaciones para la configuración de sus preferencias:</p>
+
+      <p> - La mayoría de veces es  recomendable trabajar a 44,1 KHz. </p>
+
+      <p> - Los parámetros "Signal Vector Size" y "I/O Vector Size" son ambos expresiones del tamaño del búfer. Entre más grande sea el tamaño del búfer, más eficiente será la máquina (y el DSP), pero se pagará un alto precio en latencia. Es importante tener en cuenta también que Max For Live (así como Pd) trabajan con un  tamaño de vector de señal fijo a 64 samples (compatibilidad). Más información disponible <a href="https://docs.cycling74.com/max5/tutorials/msp-tut/mspaudioio.html" target="_blank"><u>aquí</u></a> y <a href="https://cycling74.com/forums/topic/signal-and-io-vector-sizes/" target="_blank"><u>aquí</u></a>. </p>
+
+      <p> - La ventana "Audio Status" incluye dos casillas de verificación denominadas "Scheduler In Overdrive" y "Audio Interrupt". Dichas casillas le permiten al usuario definir los niveles de prioridad establecidos por Max en el manejo de eventos. Si se activa la casilla "Overdrive", Max utilizará dos subprocesadores; siempre que se active también la casilla "Audio Interrupt", Max dará prioridad a los eventos dentro del subproceso de audio, mejorando considerablemente el manejo del tiempo de dichos eventos. Para ello, sin embargo, es recomendable mantener sus operaciones de control dentro del subproceso de audio (DSP), pues de otra forma, se obtiene una sincronización debilitada entre flujo de señal y flujo de datos. Más información <a href="https://cycling74.com/2004/09/09/event-priority-in-max-scheduler-vs-queue/#.WHj6siMrL-k" target="_blank"><u>aquí</u></a> y <a href="https://cycling74.com/forums/topic/about-audio-interrupt/#.WHuDsSMrL-k" target="_blank"><u>aquí</u></a>.  </p>
+
+      <p> - La ventana "Audio Status" incluye también visualización de la CPU así como la posibilidad de activar y desactivar DSP. Otra forma de monitorear el uso de la CPU se encuentra seleccionando el ítem "Show CPU Usage" dentro del menú "View". Este video demuestra cómo hacerlo: <a href="https://www.youtube.com/watch?v=yifW8WKltL0" target="_blank"><u>link</u></a>.</p>
+
+      <p><b>3. Haga una prueba de sonido. </b>Seleccione el ítem "Audiotester" dentro del menú "Extras":</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ymLXYTeZXn4" frameborder="0" allowfullscreen></iframe></p>
+
+      <p>En la mitad inferior de la ventana (lado izquierdo) hay un menú emergente debajo de la palabra "Source" que contiene la palabra "Off". Utilice este menú para seleccionar los ítems "Oscillator" y/o "Pink noise" siempre que desee comprobar su sistema de monitoreo o refuerzo sonoro.</p>
+
+
+
+      <p><b>4. Cree un nuevo patch.</b> En Max, un documento se denomina "patch". Este representa el área en la que creamos, modificamos y reproducimos un "programa" particular, alternando entre los modos "locked" (edición) y "unlocked" (ejecución). Cree un nuevo patch utilizando el comando de teclado "apple + n":</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/5w2Ib6dTq-Q" frameborder="0" allowfullscreen></iframe></p>
+
+      <p>El nombre del patch se encuentra en la barra superior de la ventana. De forma predeterminada, aparece entre paréntesis la palabra "unlocked", lo que significa que podemos editar el programa. Para ejecutarlo (p. ej. para controlar la frecuencia de un oscilador en tiempo real) es necesario desbloquear el patch utilizando el comando "apple + e". También se puede desbloquear el patch utilizando el candado ubicado al lado inferior izquierdo de la ventana, o haciendo clic en un espacio vacío del patch con la tecla "apple" presionada.</p>
+
+      <p><b>5. Cree algunos objetos.</b> Dentro de un patch es posible interconectar objetos y  configurar redes para lograr una funcionalidad deseada, como por ejemplo, la de un sintetizador. Los objetos generalmente toman algo, realizan una función particular de acuerdo a ese "algo" y entregan un resultado. Un programa se ejecuta de acuerdo a sus objetos y a cómo sus objetos funcionan en conjunto dentro de un patch.</p>
+
+      <p>Cree un nuevo objeto presionando "n" en un patch desbloqueado, seguido del nombre del objeto. Las entradas (siempre arriba) reciben información y las salidas (siempre hacia abajo) envían información. En este ejemplo, el objeto [+] recibe dos números enteros en sus entradas (arriba) y devuelve la suma (otro número entero) a la salida (abajo):</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ypz_BLfL3TQ" frameborder="0" allowfullscreen></iframe></p>
+
+      <p>Vemos también en este ejemplo cómo el flujo de datos que recibe el objeto por su entrada derecha no genera un nuevo resultado a la salida del mismo. Por esto usualmente se denomina "cold inlet" a la entrada derecha (pues no genera un nuevo resultado) y "hot inlet" a la izquierda. Como lo muestra el video, los datos pueden ser "sincronizados" utilizando el objeto [pak], el cual permite computar un nuevo resultado cada vez que se modifique cualquiera de los elementos en la operación.</p>
+
+      <p>Para saber más acerca de cualquier objeto en Max, haga clic derecho sobre el objeto y seleccione la ayuda ("Open Help") y/o referencia ("Open Reference"): </p>
+      <p><img src="https://i.imgsafe.org/be9ddac54e.png" width="20%" height="20%"/></p>
+
+      <p>La ayuda es en sí misma un patch en el que se presenta la funcionalidad del objeto; la referencia contiene en cambio información en texto detallada acerca del comportamiento del objeto, como por ejemplo, los tipos de argumentos y tipos de mensajes para los que dicho objeto está habilitado. </p>
+
+      <p>En el siguiente ejemplo vemos cuál es por defecto la ordenación de los mensajes en Max ("message ordering"). Si bien a menudo parece que todo está sucediendo de manera simultánea, en realidad los mensajes se producen y actúan en un orden específico, esto es (por defecto), de derecha a izquierda y desde abajo hacia arriba: </p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/5H2A3B1jgEY" frameborder="0" allowfullscreen></iframe></p>
+
+      <p>Vemos también en el video anterior cómo por medio del objeto [t] ("trigger"), podemos establecer una ordenación particular de los mensajes que reemplaza la ordenación por defecto. Es importante recordar este objeto siempre que se necesite configurar una ordenación particular de los mensajes al interior de de los patches.</p>
+
+      <p>En Max existen varias familias de objetos. Objetos como [+] y [t] pueden entenderse como objetos de control que operan datos, como por ejemplo, números enteros y decimales, en donde el flujo de datos ("data rate") puede ser determinado por el usuario. En contraste, los objetos de la familia MSP permiten procesamiento de audio (DSP) y por ende, el flujo de sus operaciones sucede de acuerdo a la frecuencia de muestreo (p. ej. 44.1 Hz) ("sample rate"). Dichos objetos incluyen siempre el carácter "~" al final de su nombre, lo que los diferencia de los objetos que trabajan sólo con datos como números enteros y decimales. En el siguiente ejemplo, utilizamos el objeto cycle~, un oscilador sinusoidal que recibe un valor decimal en su entrada izquierda y devuelve una señal de audio sinusoidal a la frecuencia especificada por el valor recibido. Adicionalmente, utilizamos objetos nativos de Max para controlar la amplitud de la señal (multiplicando la salida del oscilador por una amplitud determinada) y pasar la salida de audio de Max a la interfaz y altavoces (utilizando dac~, siglas en inglés para "convertidor digital a analógico"):</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/GQpRbdoiCJA" frameborder="0" allowfullscreen></iframe></p>
+
+      <p>La información que viene después del nombre de un objeto se denomina "argumento", y se utiliza para configurar el comportamiento del mismo. Observe que, en el ejemplo anterior, la amplitud de la sinusoidal está definida por el argumento del objeto [*] (en este caso, 0.5, lo que significa, la mitad de la máxima amplitud). También es posible utilizar argumentos para inicializar el oscilador a una frecuencia especificada:</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/01YOL4dvD9I" frameborder="0" allowfullscreen></iframe></p>
+
+      <p>Del ejemplo anterior resulta evidente que controlar la amplitud usando una caja numérica cortará la salida de Max ("clip"). Esto sucede, en parte, por utilizar valores discretos en una operación de audio. Para un control adecuado de la amplitud de una señal de audio es necesario siempre utilizar rampas entre los valores discretos, utilizando el objeto line~, en conjunto con el objeto [pak], como lo muestra el video a continuación:</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/0CIgWZ2sKho" frameborder="0" allowfullscreen></iframe></p>
+
+      <p>Es importante notar la diferencia entre el flujo de datos (cables grises) y el flujo de señal de audio (cables verdes) con el fin de configurar correctamente nuestros programas. Intente reproducir los ejemplos anteriores y observe la ayuda y referencia de los objetos mencionados. Si tiene problemas en el camino, este video de Joel Rich en <a href="https://www.youtube.com/watch?v=BSA9fYLqDCU&list=PLasl9I6VeCCqdfQpjZwV-rjIXQS3OnoDe&index=17" target="_blank"><u>youtube</u></a> le puede ser útil.</p>
+
+      <p><b>6. Cree algunos objetos GUI.</b> "GUI" viene de las siglas en inglés "Interfaz Gráfica de Usuario" ("Graphical User Interface"). Los objetos GUI permiten la interacción del usuario con el programa de múltiples maneras, bien sea para generar eventos, modificar parámetros o monitorear lo que está sucediendo. A nuestro ejemplo anterior podemos agregar objetos de esta índole tal y como scope~ (que permite visualizar la señal de audio), live.gain~ (que controla la amplitud y reemplaza al objeto *~) y ezdac~ (que funciona igual que dac~, pero incluye además una forma de activar y desactivar DSP dentro del patch):</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/swwmjJMT6C8" frameborder="0" allowfullscreen></iframe></p>
+
+      <blockquote>Descargue este patch <a href="https://www.dropbox.com/s/8dl6uc012lkz66l/Example%20A1.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+      <p>Una característica particular de Max es su modo presentación ("Presentation Mode"). Este modo le permite al usuario configurar un ordenamiento particular de los objetos en la ventana del patch, destinado exclusivamente para la ejecución del programa. En modo presentación el usuario debe definir la visibilidad de los objetos uno a uno (según considere), haciendo clic con el botón derecho sobre un objeto, seleccionando "Inspector Window", y activando la casilla "Open In Presentation":</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/z30dWBRCZ8o" frameborder="0" allowfullscreen></iframe></p>
+
+      <p>Probablemente en este punto sea necesario registrar Max en internet con el fin de poder modificar y salvar nuevos patches. El siguiente video muestra cómo hacerlo (se requiere de una cuenta de correo):</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/y7G-SNhvkz0" frameborder="0" allowfullscreen></iframe></p>
+
+      <p><b>7. Cree abstracciones ("sub-patches").</b> Una característica notable de los entornos de programación visual es la capacidad de crear abstracciones (también llamadas "sub-patches"), denominada "encapsulación". En el siguiente ejemplo, encapsulamos los objetos del patch anterior en una nueva abstracción, utilizando el comando "apple + shif + e" con los objetos seleccionados. Esto permite, por ejemplo, crear varias señales sinusoidales del mismo tipo rápidamente, duplicando la nueva abstracción por medio del comando "apple + d":</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/OZrriVWtsIM" frameborder="0" allowfullscreen></iframe></p>
+
+      <blockquote>Descargue este patch <a href="https://www.dropbox.com/s/0dqclpwzq3rxbel/Example%20A2.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+      <p>Para aprender más sobre abstracciones en Max puede consultar el tutorial de Kojiro Umezaki <a href="https://www.youtube.com/watch?v=PJyomp-RJEs&index=9&list=PLasl9I6VeCCqdfQpjZwV-rjIXQS3OnoDe" target="_blank"><u>aquí</u></a>. También, es posible agregar asistencia a las entradas y salidas de sus abstracciones, tal y como lo demuestra este <a href="https://www.youtube.com/watch?v=yceO6D85qT0" target="_blank"><u>video</u></a>.</p>
+
+      <p><b>8. Grabe un poco de audio.</b> La forma más sencilla de grabar la salida de audio de Max en el disco duro es utilizando "Quickrecord". Para ello, seleccione el elemento "Quickrecord" dentro del menú "Extras". En la nueva ventana que aparece, utilice el botón "Choose a directory" para seleccionar un destino para los archivos de audio y luego utilice el botón "Record" para iniciar la grabación:</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/pJ4bdYQ5ARk" frameborder="0" allowfullscreen></iframe></p>
+
+      <blockquote>Descargue este patch <a href="https://www.dropbox.com/s/njzxnkgbslydg6h/Example%20A3.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+      <p>Este breve video en <a href="https://www.youtube.com/watch?v=-PVSSv8nw2w" target="_blank"><u>youtube</u></a> de Cycling74 también muestra cómo hacerlo.</p>
+
+      <p><u>Acerca de Rewire: </u>Otra forma de grabar su salida de audio es utilizando la tecnología Rewire. Esta permite enviar y recibir audio entre Max y estaciones de trabajo digital (DAW) tal y como Cubase, Reason y Pro Tools, en donde usted puede mezclar, editar y procesar posteriormente la salida de audio de sus patches. Más información acerca de Rewire <a href="https://docs.cycling74.com/max7/vignettes/rewire" target="_blank"><u>aquí</u></a> y <a href="https://cycling74.com/2006/09/18/rewire-essentials-1-from-maxmsp-to-your-host/#.WHkkfSMrL-k" target="_blank"><u>aquí</u></a>.</p>
+
+      <p><b>9. Configure una ubicación para sus librerías y objetos externos. </b> Como se puede ver en ejemplos anteriores, Max es un entorno modular en el que el usuario construye programas complejos mediante la combinación de muchos módulos más pequeños (como por ejemplo, objetos, abstracciones). Los objetos desarrollados por programadores por fuera de Cycling74 son normalmente denominados "externals" (como por ejemplo,<a href="https://cycling74.com/forums/topic/64-bit-versions-of-sigmund-fiddle-and-bonk/#post-364960" target="_blank"> los objetos fiddle~ y bonk~</a>, los cuales el usuario debe encontrar en la internet y comprobar que sean compatibles con su computadora). Una "librería" o "colección" contiene muchos objetos creados por desarrolladores alrededor del mundo; después de instalar una librería correctamente, es posible importar dichos objetos en nuevos patches. </p>
+
+      <p>Para importar objetos externos es necesario primero definir un directorio en donde colocarlos (como por ejemplo, la carpeta Documentos, o en donde residen los archivos de sus proyectos musicales o de programación). A manera de ejemplo, el siguiente video muestra cómo instalar la librería "Real Time Composition" (RTC) (Composición en Tiempo Real) de Karlheinz Essl, la cual se debe descargar y descomprimir manualmente. Después de crear una locación para las librerías y los objetos externos, seleccione el ítem "File Preferences" dentro del menú de Opciones ("Options") para abrir esta ventana:</p>
+      <p><img src="https://i.imgsafe.org/ac0a16bf63.png" width="50%" height="50%"/></p>
+
+      <p>Haga clic en el '+' que aparece en la esquina inferior izquierda de la ventana para generar una nueva entrada en la lista. Posteriormente, haga clic en el botón "Choose" que se encuentra en la columna "Path" para la nueva entrada. Aparecerá una ventana en la que podrá seleccionar la carpeta que creó anteriormente para guardar guardar librerías y objetos externos:</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/VlHTb_X97eI" frameborder="0" allowfullscreen></iframe></p>
+
+      <p>Ahora que tenemos la librería RTC instalada podemos utilizar sus objetos. La librería RTC es muy amplia y existe desde 1992; en el siguiente ejemplo introducimos una pequeña muestra de comportamiento aleatorio utilizando el objeto externo [between]:</p>
+
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/HcsWA6197yg" frameborder="0" allowfullscreen></iframe></p>
+
+      <blockquote>Descargue este patch <a href="https://www.dropbox.com/s/t5z3rmnxd2g4n1s/Example%20A4.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+      <p><u>Acerca de "Package Manager": </u>A partir de la versión 7.1 Max proporciona un gestor de paquetes ("Package Manager") que instalará y localizará las librerías y objetos externos de manera automática por usted (sin embargo, dicho gestor solo funciona con librerías disponibles a través del gestor mismo y no en otros sitios web). Dichas librerías se denominan paquetes, y se encuentran en el directorio "Max 7/Packages"; es recomendable administrar los paquetes únicamente desde su gestor y no cambiar el nombre del directorio mencionado. Más información sobre el gestor de paquetes <a href="https://docs.cycling74.com/max7/vignettes/package_manager" target="_blank"><u>aquí</u></a> y <a href="https://cycling74.com/2015/12/14/introducing-the-max-package-manager/#.WHcg9iMrL-k" target="_blank"><u>aquí</u></a>.</p>
+
+      <p><u>Creación de sus propios objetos:</u> De forma similar a la encapsulación, Max permite al usuario crear sus propios objetos en el disco duro e incluirlos posteriormente en nuevos patches. Para ello es necesario que ambos archivos de Max (el objeto y el nuevo patch en el que será utilizado) compartan el mismo directorio (es decir, se ubiquen en la misma carpeta). </p>
+
+      <p>¿Cuál es la diferencia entre los objetos creados por el usuario y los objetos nativos de Max? En esencia, los objetos nativos pueden llamar funciones que están codificadas en archivos de texto que viven en el directorio Application/Max7. Estos objetos ejecutan código de bajo nivel ("low-level code"), el cual no necesitamos ver o entender a profundidad, siempre y cuando esté claro qué información se recibe, y qué hará el objeto con dicha información (Blum 2007, p.20). </p>
+
+      <p>Tenga en cuenta también que, además de objetos, es posible incluir Plug-ins de audio y dispositivos Max For Live en sus patches (<a href="https://www.youtube.com/watch?v=6ZzfEfs2Tgs&list=PLasl9I6VeCCpJCIr5yF2XwtBZdxSzRHTW&index=8" target="_blank"><u>aquí</u></a>).</p>
+
+      <p><b>10. Explore la web.</b> Un muy buen lugar para empezar es la documentación web de Cycling74 para Max 7 (<a href="https://docs.cycling74.com/max7/" target="_blank"><u>aquí</u></a>). Youtube también puede ser una fuente de investigación y aprendizaje:</p>
+
+      <p><a href="https://www.youtube.com/playlist?list=PLD45EDA6F67827497" target="_blank">"Delicious Max Tutorials" de Sam Tarakajian</a>.<br>
+      <a href="https://www.youtube.com/playlist?list=PL71A2325EEEFC1923" target="_blank">"Did You Know? de Cycling74</a>.<br>
+      <a href="https://www.youtube.com/playlist?list=PLasl9I6VeCCrNLAoOiKibDqJc1rsjLSDi" target="_blank">"Programming in Max For Live" de Cycling74</a>.</p>
+
+      <p>En general, existe mucha información para programar Max en la web.  Investigando a través de sitios web como el <a href="https://cycling74.com/forums/" target="_blank"><u>foro de Cycling74</u></a> casi siempre le ahorrará tiempo. El <a href="http://sites.uci.edu/iap2015/examples/" target="_blank"><u>sitio web de Christopher Dobrian</u></a> es también muy completo y vale la pena echarle un vistazo.</p>
+
+      <p>No olvide que a través de este <a href="https://www.zotero.org/groups/uniandes-dam/items" target="_blank"><u>link</u></a>, usted puede consultar la bibliografía de este curso en la web, utilizando palabras clave y etiquetas en su búsqueda. Idealmente, esto le ahorrará tiempo y esfuerzo para encontrar información acerca de técnicas de procesamiento de señal, preguntas de programación u objetos particulares en Max. Existe también una base de datos de objetos en Max disponible en <a href="http://maxobjects.com/" target="_blank"><u><a href="http://maxobjects.com/" rel="nofollow" target="_blank">http://maxobjects.com/</a></u></a></p>
+
+      <p><b>Acerca de la licencia de Max: </b>La primera vez que usted instale Max en su computadora, el programa funcionará en modo demo (una versión completa del software sin restricciones) durante los siguientes treinta días; posterior a esto debe adquirirse una licencia. Más info <a href="https://cycling74.com/shop/#.WHa7xyMrL-l" target="_blank"><u>aquí</u></a>.</p>
+
+      <p>Referencias:</p>
+
+      <p>Cipriani, Alessandro, and Maurizio Giri. Electronic Music and Sound Design: Theory and Practice with Max and MSP, Vol. 1. Rome: ConTempoNet 2014, 2014.</p>
+
+      <p>Blum, Frank. Digital Interactive Installations: Programming Interactive Installations Using the Software Package Max/MSP/Jitter. Saarbrücken: VDM, 2007.</p>
+
+      <p><a href="https://cycling74.com/project/practical-starting-guide-to-maxmspjitter/#.WHcUbiMrL-k" rel="nofollow" target="_blank"> "Practical starting guide to Max/MSP/Jitter".</a></p>
+      <br><br><br><br>
+    
+			
+</body>
+
+  <!--               content               -->
+
+  <!--               footer               -->
+
+  <footer>
+  <!--<a href="http://musica.uniandes.edu.co/" title="Home"><img src="http://media.virbcdn.com/images/f5/d55287a3b2087f99-LOGO-UNIANDES-850.jpg" width="383" height="83" alt="DEPARTAMENTO DE M&Uacute;SICA"></a>
+	-->
+	</footer>
+
+
+</html>
