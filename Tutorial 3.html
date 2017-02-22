@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<!--               head               -->
+<head>
+  <meta charset="utf-8">
+  <meta name="index" content="Sergio Granada-Moreno Portfolio">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title> Diseño de aplicaciones musicales</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="http://sergiogranadamoreno.tk/">
+	<link href="http://musica.uniandes.edu.co/">
+	<link href="http://uniandes.edu.co/">
+	<link href="http://sergiogranadamoreno.tk/">
+  <link href="https://www.zotero.org/groups/uniandes-dam/items">
+
+	<!-- IE Mobile 10.0 rendering bug fix -->
+    <script>(function(){if("-ms-user-select"in document.documentElement.style&&navigator.userAgent.match(/IEMobile\/10\.0/)){var a=document.createElement("style");a.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));document.getElementsByTagName("head")[0].appendChild(a)}})();</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="revisit-after" content="3 days" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Diseño de aplicaciones musicales" />
+    <meta property="og:url" content="http://dam.uniandes.edu.co" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://i.imgsafe.org/98b3b7c893.png" />
+
+  </head>
+<!--               body               -->
+<body>
+
+	    <header id="site-header" class="group">
+
+	        <div class="logo">
+            
+          	<!-- start of freefind search box html -->
+		<table cellpadding=0 cellspacing=0 border=0 >
+		<tr><td  style="font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;">
+		<form style="margin:0px; margin-top:4px;" action="http://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+		<input type="hidden" name="si" value="17718934">
+		<input type="hidden" name="pid" value="r">
+		<input type="hidden" name="n" value="0">
+		<input type="hidden" name="_charset_" value="">
+		<input type="hidden" name="bcd" value="&#247;">
+		<input type="text" name="query" size="15"> 
+		<input type="submit" value="search">
+		</form></td></tr>
+		<tr><td style="text-align:left; font-family: Arial, Helvetica, sans-serif;font-size: 7.5pt;padding-top:4px;"></td></tr></table>
+		<!-- end of freefind search box html -->
+
+          <nav id="access" role="navigation">
+          <h3 class="assistive-text">Main menu</h3>
+          <div class="skip-link"><a class="assistive-text" href="#content">Skip to primary content</a></div>
+          <div class="menu-main-menu-container">
+          <ul id="menu-main-menu" class="menu"><li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="index.html"> Currículo </a></li>
+          <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="Guia.html">Guía rápida</a></li>
+          <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="Tutoriales.html">Tutoriales</a></li>
+          <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-31"><a href="Ejemplos.html">Enlaces web</a></li>
+          <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="Links.html">Lectura sugerida</a></li>
+          <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="Bibliografia.html">Bibliografía</a></li>
+          <li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="Contacto.html">Contacto</a></li>
+          </ul></div>     </nav><!-- #access -->
+	        </div>
+	    </header>
+	    <p><b><br><br><br><br>El modelo análogo y los módulos Beap (Tutorial 3)</b></p>
+
+			<p><b>1. Acerca de Beap</b>. Los "módulos Beap" son una serie de objetos en Max 7 diseñados para emular el procesamiento de señal y funcionamiento de sintetizadores análogos (p. ej. <a href="https://www.moogmusic.com/products/minimoog/minimoog-model-d">Moog</a>, <a href="http://www.vintagesynth.com/arp/odyssey.php">ARP</a>, <a href="https://en.wikipedia.org/wiki/Nord_Modular">Nord</a>). El proyecto fue originalmente desarrollado por Matthew Davidson en 2013 y aún puede descargarse en Github como proyecto de fuente libre (<a href="https://github.com/stretta/BEAP">aquí</a>). Davidson - alias "<a href="https://www.youtube.com/user/stretta">Stretta</a>" - es profesor del <a href="https://www.berklee.edu/">Berklee College of Music</a> y trabajó en empresas como <a href="http://www.motu.com/">MOTU</a> y <a href="https://cycling74.com/">Cycling74</a>.</p>
+
+			<p>Actualmente los módulos Beap han sido totalmente integrados dentro de Max 7 (los archivos residen dentro de la aplicación), y no hay necesidad de descargar o instalar librerías externas para acceder a ellos. Existen dos formas de acceso rápido a los objetos Beap:</p>
+
+			<p>(1) Click izquierdo sobre un patch en modo edición permite el acceso al submenú "Paste From". Seleccione el ítem "Beap" dentro del submenú para acceder a la lista completa de objetos Beap, organizados mediante categorías acorde al vocabulario de la síntesis modular.</p>
+			
+			<ul><img src="https://i.imgsafe.org/69580ed5e5.png" width="30%" height="30%"/></ul>
+			
+			<p>(2) Acceda a la misma lista de objetos Beap utilizando la barra de herramientas lateral izquierda de Max (la B corresponde al ícono de Beap). </p><br><br>
+
+			<ul><img src="https://i.imgsafe.org/6958158eb7.png" width="20%" height="20%"/></ul>
+			
+			<p>NOTA: Observe que los objetos Beap residen dentro de los contenidos de la aplicación como tal, a diferencia de los objetos obtenidos a través del gestor de paquetes ("Package Manager"), los cuales residen en el directorio de usuario "~Documents/Max7".</p>
+
+			<p><b>2. Acerca del modelo análogo</b>. Los sintetizadores análogos se pueden dividir en componentes más pequeños y con distintas funciones, denominados módulos ("modular hardware"); el "modelo análogo" hace referencia al empleo de <a href="https://en.wikipedia.org/wiki/CV/gate">señales de voltaje (p. ej., entre +/- 5 voltios)</a> para configurar el flujo de señal entre dichos módulos, así como el control de sus parámetros. </p>
+
+			<p>De acuerdo a su función se pueden definir cuatro categorías principales para los módulos: generadores, filtros, amplificadores y moduladores (<a href="https://cycling74.com/wiki/index.php?title=BEAP_Analog_Model_Curriculum_Outline#Introduction">Groose 2013</a>). Estos se interconectan utilizando cables de audio de 12", como lo muestra este video en youtube (<a href="https://youtu.be/lJ0M9b4mRNc?t=4"><u>aquí</u></a>). A dichos cables se les denomina comúnmente "patch cables", de donde se derivan los términos "patching" y "patch", adoptados en el contexto de la programación visual, en software como Max y Pd, para referirse a la configuración de un programa.</p>
+
+			<p>Existen dos tipos de señales de voltaje utilizadas para interconectar y controlar hardware modular:</p>
+
+			<p>I. Voltaje de control (CV, del inglés "Control Voltage"), una señal utilizada como fuente sonora y para la modulación. Cuando se utiliza para controlar la altura del sonido se le denomina "Pitch CV".</p>
+
+			<p>II. "Gate", una señal eléctrica análoga a un interruptor, con dos valores posibles ("ON", "OFF"), utilizada para generar secuencias de eventos en el tiempo. Si el rango dinámico de la señal es de <a href="https://en.wikipedia.org/wiki/CV/gate">+/- 5</a>, "Gate" utiliza señales de 0 y 5 voltios para representar estos dos valores posibles ("ON", "OFF").</p>
+
+			<p>Adicionalmente, es usual utilizar un tercer tipo de señal denominada "Trigger", la cual, a diferencia de "Gate", reporta solamente el inicio del evento (de manera similar a un metrónomo). Observe en la siguiente gráfica la diferencia entre las señales "Pitch CV", "Gate" y "Trigger" (más info <a href="https://www.muffwiggler.com/forum/viewtopic.php?t=59330">aquí</a>):</p><br><br>
+
+			<ul><img src="https://i.imgsafe.org/6960d0855f.png" width="30%" height="30%"/></ul>
+
+			<p><u>Acerca de Pitch CV:</u> El voltaje "Pitch CV" requiere de un estándar particular para representar las 12 alturas cromáticas de la escala temperada. Uno de los más populares es el de sintetizadores modulares como Eurorack, Moog y ARP, en donde un voltio equivale a una octava ("1v/oct"). En palabras de Le Chat (<a href="https://www.muffwiggler.com/forum/viewtopic.php?t=59330">2017</a>), si un oscilador ha sido calibrado para que a 0 voltios oscile a la frecuencia correspondiente a C3, el envío de 1 voltio producirá un C4, el envío de -1 voltio producirá un C2, el envío de 0.5 voltios producirá un F#3 entre C3 y C4 (un tritono, intervalo que divide la escala simétricamente en dos), etc. En otras palabras, para expresar la escala cromática: C4, C#4, D4, D#4, E4, F4, F#4, G4, G#4, A4, A#4, B4, C5…</p>
+
+			<p>Se requiere, respectivamente, de los siguientes valores en voltios: </p>
+
+			<p>1, 1+(1/12), 1+(2/12), 1+(3/12), 1+(4/12), 1+(5/12), 1+(6/12), 1+(7/12), 1+(8/12), 1+(9/12), 1+(10/12), 1+(11/12), 2…</p>
+
+			<p><b>3. Sintetizador simple</b>. El siguiente diagrama de bloques ilustra el empleo de las señales de voltaje (descritas anteriormente) en el diseño de un sintetizador simple:</p><br><br>
+
+			<ul><img src="https://i.imgsafe.org/696502c159.png" width="50%" height="50%"/></ul>
+
+			<p>El diagrama incluye cuatro módulos: </p>
+
+			<p>I. Una entrada (proveniente de un teclado o secuenciador) con tres señales de voltaje correspondientes a: (1) la altura del sonido expresada en voltios ("Pitch CV"); (2) el "Gate" ("ON/OFF") y (3) el valor <a href="http://electronicmusic.wikia.com/wiki/Velocity">MIDI "velocity"</a> (p. ej. correspondiente a la presión  sobre la tecla).</p>
+
+			<p>II. Un oscilador de voltaje controlado (VCO, del inglés "Voltage Controlled Oscillator"), que provee una señal eléctrica continua cuya amplitud usualmente se expresa entre 0-5 voltios. El diseño de un VCO incluye generalmente la forma de onda diente de sierra y dispone de varias salidas con otras formas de onda como triangular, cuadrada, etc. (observe las múltiples salidas en el Moog VCO 901 de la figura a continuación).</p> <br><br>
+
+			<ul><img src="https://i.imgsafe.org/697955fd60.jpg" width="10%" height="10%"/></ul>	<blockquote>Imagen del Moog VCO 901 (más info <a href="http://artsites.ucsc.edu/ems/music/equipment/synthesizers/analog/moog/moog.html#901"><u>aquí</u></a>). Tomado de <a href="http://modularsynthesis.com/">Brown (2017)</a>.</blockquote>
+
+
+			<p>III. Un amplificador controlado por tensión (<a href="https://en.wikipedia.org/wiki/Variable-gain_amplifier">VCA, del inglés "Voltage Control Amplifier"</a>), el cual varía la amplitud de la señal de acuerdo a un voltaje aplicado, p. ej., una señal "Gate" proveniente de un teclado. El valor MIDI "velocity" se multiplica con la señal resultante para determinar la amplitud final del sintetizador. </p><br><br>
+
+			<ul><img src="https://i.imgsafe.org/697958d6a7.jpg" width="5%" height="5%"/></ul> <blockquote> Imagen del Moog VCA 902 (más info <a href="http://artsites.ucsc.edu/ems/music/equipment/synthesizers/analog/moog/moog.html#901"><u>aquí</u></a>). Tomado de <a href="http://modularsynthesis.com/">Brown (2017)</a>.</blockquote>
+
+			<p>IV. Una salida de audio que pasa la señal a los altavoces.</p>
+
+			<p>Observemos ahora cómo implementar dicho diagrama utilizando módulos Beap en Max 7:</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/MrT6_jb-OOs" frameborder="0" allowfullscreen></iframe></p> 
+
+			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/wedj3dtb6hz81vj/Tutorial%203%20-%20Patch%201a.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+			<p>En el video anterior los objetos Beap "bp.Oscillator", "bp.VCA" y "bp.Stereo" implementan el oscilador, amplificador y la salida de audio del diagrama. La entrada de voltaje es implementada utilizando el objeto [midiin] (nativo de Max) y "bp.Midi To Signal" (parte de Beap); [midiin] entrega información Midi sin formato ("raw data") a "bp.Midi To Signal", el cual internamente la convierte a CV y entrega a su salida dos señales: (1) "1v/oct", en donde un voltio equivale a una octava; (2) "Gate", que controla la entrada CV del VCA. A continuación algunas anotaciones:</p>
+
+			<p>I. En el modo "Freq" la frecuencia central (262 Hz) del oscilador puede ser modificada en Hz seleccionando el valor deseado; en el modo "Semi" la frecuencia central equivale a 0 y puede modificarse en un rango de +-64 semitonos.</p>
+
+			<p>II. Los términos "Two-Quadrant Multiplier" y "Four-Quadrant Multiplier" en el objeto "bp.VCA" hacen referencia al manejo de las señales del amplificador de acuerdo a su polaridad (más info <a href="https://en.wikipedia.org/wiki/Analog_multiplier">aquí</a>).</p>
+
+			<p>III. En general, las conexiones entre los módulos Beap ocurren dentro del subproceso de audio ("at signal-rate"), el cual, conforme al rango dinámico de +/-5 voltios, se representa en números decimales entre 0 y 5, de manera distinta a como se configura normalmente en Max (entre 0 y 1). Por ello es importante recordar no conectar la salida de los módulos Beap a un objeto como como dac~ o ezdac~ de manera directa, sin antes multiplicar la señal por 0.2 (5 * 0.2 = 1), o pasar la señal por uno de los módulos de salida de Beap (en el ejemplo anterior, el objeto "bp.Stereo"), disponibles en el submenú "Output".</p>
+
+			<p>IV. Para interactuar con el objeto [midiin] sin un controlador Midi, es posible emplear la utilidad "KeyMidi" dentro del menú "Extras" de Max 7. Al abrir este patch automáticamente se habilita un teclado virtual que puede operarse con el teclado alfanumérico del computador. </p>
+
+			<p><b>3. Filtros</b>. El modelo análogo se relaciona con la <a href="https://en.wikipedia.org/wiki/Subtractive_synthesis">síntesis sustractiva</a> en la medida que busca iniciar con espectros ricos en armónicos para posteriormente atenuar sus parciales utilizando filtros. Particularmente, es usual utilizar un filtro pasa bajos (LPF, del inglés, "Low Pass Filter"), el cual, como su nombre sugiere, permite el paso de las frecuencias bajas y bloquea el paso de las altas, de acuerdo a una "frecuencia de corte" (<a href="https://en.wikipedia.org/wiki/Cutoff_frequency">"cutoff"</a>), es decir, un punto divisorio (en el espectro) entre las frecuencias bajas y altas. La tasa de cambio por la que el filtro reduce la señal es denominada "slope" (pendiente), la cual se expresa en decibeles por octava, y determina qué tan eficaz es la atenuación de los parciales no deseados: </p><br><br>
+			
+			<ul><img src="https://i.imgsafe.org/697f44aa4c.png" width="20%" height="20%"/></ul>
+			
+			<p>En el siguiente diagrama de bloques se incluye un filtro pasa bajos (LPF) en el flujo de señal entre el oscilador y el amplificador VCA:</p><br><br>
+			<ul><img src="https://i.imgsafe.org/696520f2a0.png" width="50%" height="50%"/></ul>
+			
+
+			<p>Observemos ahora cómo implementar el diagrama anterior a través de Beap en Max 7, intercambiando el oscilador anterior por el objeto "bp.Cloud" (dentro del submenú "Oscillators"), y utilizando el objeto "bp.LPF" como filtro pasa bajos (dentro del submenú "Filters"):</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ge_XT4nfKlw" frameborder="0" allowfullscreen></iframe></p> 
+
+			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/ldxsfk8zy8s6d45/Tutorial%203%20-%20Patch%202.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+			<p>Observe que la frecuencia de corte del filtro puede modificarse alternando entre Hz y semitonos ("Freq"/"Semi"). Dentro de su diseño existe también una frecuencia de corte inicial a la que el filtro está calibrado, correspondiente al Do central en el piano. La frecuencia de corte puede ser modificada utilizando los objetos GUI o a través de las entradas dos, tres y cuatro (habilitadas para recibir señales de control en CV). </p>
+
+			<p><b>4. Envolventes</b>.<b> </b>Los módulos generadores de envolvente, como su nombre sugiere, entregan a su salida una envolvente que puede utilizarse como una señal de control dentro del sintetizador. A diferencia de un oscilador (que repite su señal una y otra vez), el generador de envolvente envía su señal una única vez, de acuerdo a una segunda señal de voltaje (como "Trigger" o "Gate"). Como se mencionó en tutoriales anteriores, la evolución en el tiempo de las envolventes suele definirse mediante etapas (p. ej., ADSR, del inglés "attack, decay, sustain, release") (más info <a href="http://en.wikiaudio.org/ADSR_envelope">aquí</a>). </p>
+
+			<p>En el siguiente diagrama se incluye un generador de envolvente que recibe la señal "Gate" y ejecuta sus etapas de manera acorde (usualmente, "ON" activa las etapas "Attack" y "Decay" mientras que "OFF" activa el "Release"). La salida del generador es utilizada por el amplificador VCA para modificar la textura de la fuente sonora de acuerdo a la envolvente:</p><br><br>
+
+			<ul><img src="https://i.imgsafe.org/6965232438.png" width="50%" height="50%"/></ul>
+
+			<p>Observemos ahora cómo modificar el patch en Max para utilizar el objeto "bp.ADSR" (disponible dentro del submenú "Envelopes"):</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/3KG3AUrU2mE" frameborder="0" allowfullscreen></iframe></p> 
+
+			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/wko0x36blseloc8/Tutorial%203%20-%20Patch%203.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+			<p>Como lo muestra el video, basta con incluir el objeto "bp.ADSR" en medio del flujo de la señal "Gate" entre la salida del "bp.MidiToSignal" y la entrada del amplificador "bp.VCA". Utilizando la misma configuración, es usual utilizar una envolvente adicional para controlar la frecuencia de corte del filtro, como se muestra en el diagrama a continuación:</p><br><br>
+
+			<ul><img src="https://i.imgsafe.org/6966aecdaf.png" width="50%" height="50%"/></ul>
+
+			<p>Observemos cómo realizar esta adición en el patch, intercambiando el generador de envolvente anterior por el objeto "bp.AHD" (disponible dentro del submenú "Envelopes"), el cual implementa una envolvente de tres etapas ( Attack", "Hold", "Decay"). De acuerdo al diagrama anterior, utilizamos dos instancias de dicho objeto:</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/nqSbyMikn8Q" frameborder="0" allowfullscreen></iframe></p> 
+
+			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/sttu2h7scnbzpyb/Tutorial%203%20-%20Patch%204.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+			<p><b>5. Secuenciadores</b>. Un secuenciador análogo es un módulo cuya función es establecer una secuencia regular o irregular de eventos de manera repetida (<a href="http://msp.ucsd.edu/techniques.htm">Puckette 2007, p. 71).</a> A su salida el secuenciador entrega una secuencia repetitiva de voltajes (eventos en la secuencia) así como una señal "Gate" que pulsa entre voltaje y voltaje. En el siguiente video, el objeto "bp.Sequencer" (disponible dentro del submenú "Sequencer") entrega a su salida dichas señales, las cuales son utilizadas para controlar la frecuencia del oscilador y el inicio de la envolvente:</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/a3RmFVFlkdk" frameborder="0" allowfullscreen></iframe></p> 
+
+			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/823a2e7bbzsdu1x/Tutorial%203%20-%20Patch%205a.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+			<p>Observe que el objeto "bp.Sequencer" funciona por defecto de manera sincronizada con secuenciador global de Max (al cual se puede acceder utilizando el objeto [transport]). Esto puede modificarse intercambiando entre los modos "transport" y "trigger", que pueden activarse utilizando la interfaz gráfica del objeto. Si se selecciona "trigger", "bp.Sequencer" dejará de seguir el tiempo global de Max y funcionará de acuerdo a una señal de control externa recibida por su entrada izquierda. </p>
+
+			<p>En el siguiente video modificamos el patch de manera leve para presentar el objeto "bp.Ladder", el cual emula el legendario filtro "Ladder" que patentó Robert Moog desde 1966. Para ello eliminamos el objeto "bp.LPF" y conectamos el objeto "bp.Ladder" de manera idéntica dentro del flujo de señal (es decir, "bp.Ladder" recibe la fuente sonora del oscilador y pasa su salida al amplificador VCA):</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/KgqYFXkiEtA" frameborder="0" allowfullscreen></iframe></p> 
+
+			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/p94fqkw611n097y/Tutorial%203%20-%20Patch%205b.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+			<p>El diseño original de Robert Moog utiliza un circuito llamado "Ladder Network" del cual se deriva el nombre del filtro; se dice también este incluye una pequeña cantidad de distorsión, la cual Moog, deliberadamente, decidió no suprimir (más info <a href="http://www.analoguesystems.co.uk/modules/rs100.htm">aquí</a>).</p>
+
+			<p><b>6. LFO</b>. Como se discutió en tutoriales anteriores, un LFO es un oscilador cuya salida es utilizada como una señal de control en la modulación de parámetros del sonido. Observe en el video a continuación cómo utilizar el objeto "bp.CVLFO" para modular la frecuencia de corte del filtro, utilizando la posibilidad de expresar la frecuencia de la modulación en unidades métricas y de manera sincronizada con secuenciador global de Max:</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/MRSCT_lZTvE" frameborder="0" allowfullscreen></iframe></p> 
+
+			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/xa5td2i1dvndm9h/Tutorial%203%20-%20Patch%205c.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+			<p><b>7. "Rotary Sequence"</b>. El siguiente video (basado en un ejemplo original de Darwin Groose, <a href="https://cycling74.com/2015/11/17/a-few-minutes-with-beap-part-3/#.WKZ1yCMrL-k">aquí</a>) muestra como generar desplazamiento y rotación de secuencias generativas, utilizando dos objetos secuenciadores de manera simultánea ("bp.Secuecer" y "bp.GateSequencer"). Adicionalmente, se utiliza el objeto "bp.Quantizer", el cual permite restringir las alturas de la escala cromática sobre la señal de control "Pitch CV":</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/AEMjrQedsJ4" frameborder="0" allowfullscreen></iframe></p> 
+
+			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/nqcji9y1fok2rfb/Tutorial%203%20-%20Patch%207.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+			<p><b>8. Arpeggios LFO</b>. El siguiente grupo de videos muestra otra forma de implementar secuencias generativas, esta vez a partir de un ejemplo original de Matthew Davidson (<a href="https://www.youtube.com/watch?v=d7xSESnt2Uw">aquí</a>). En este caso, utilizamos osciladores de frecuencia baja (LFO) para modular la altura del sintetizador, lo cual, en conjunto con el empleo del objeto "bp.SampleAndHold", resulta en la producción de arpegios con desplazamiento rotativo, como se explica acontinuación.</p>
+
+			<p>En primera instancia, partiendo del patch del video anterior, iniciamos por eliminar los secuenciadores para invocar en su lugar el objeto "bp.MetronomicPulse", que entrega una señal CV tipo "Trigger", la cual reemplaza a la señal "Gate" en la entrada izquierda de los objetos generadores de envolvente ("bp.AHD"). Observe que "bp.MetronomicPulse" permite seleccionar las unidades de tiempo para su pulso de acuerdo a las unidades métricas del secuenciador global de Max:</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/3KZgzSzbQy0" frameborder="0" allowfullscreen></iframe></p> 
+
+			<p>Seguidamente, invocamos un LFO adicional (el objeto "bp.LFO2"). Utilizando un mezclador de audio ("bp.AudioMixer") es posible sumar la salida de los dos osciladores ("bp.CVLFO" y "bp.LFO2") para crear una señal de control compuesta de las dos oscilaciones. Una vez más, invocamos el objeto "bp.Quantizer" para escalar dicha oscilación (la cual genera un cambio continuo en la altura del sintetizador, de manera similar a un efecto glissando), de acuerdo a las frecuencias correspondientes a las alturas dentro de la escala diatónica (convirtiendo el efecto glissando en un arpegio diatónico):</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/s747udh3n5s" frameborder="0" allowfullscreen></iframe></p>
+
+			<p>Observe que la ganancia de cada señal en el mezclador determina el rango dinámico de cada oscilación, afectando de manera directa la cantidad de alturas incluídas en el arpegio resultante (entre mayor la amplitud del LFO, mayor el registro del arpegio). Utilizando el objeto scope~ es posible visualizar la suma de los dos osciladores con mayor facilidad, para lo cual es necesario cambiar su rango dinámico (utilizando la ventana "Inspector") para garantizar un buen funcionamiento con la señal de los objetos Beap, la cual se define entre 0 y 5:</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/dK_xZs5FoyE" frameborder="0" allowfullscreen></iframe></p>
+
+			<p>Seguidamente implementamos el módulo "Sample And Hold" (unidad de muestreo y retención), otra de las técnicas estándar en el control de sintetizadores análogos. En palabras de Puckette (<a href="http://msp.ucsd.edu/techniques.htm">2007, p. 54</a>), este módulo recibe una señal contínua, selecciona ciertos valores de dicha señal y los entrega a la salida. La selección de los valores se realiza de acuerdo a una segunda señal recibida, que indica los momentos para seleccionar y congelar un valor discreto de la señal contínua (el "Trigger"). En otras palabras, "Sample And Hold" congela ciertos valores en una señal contínua para entregar una señal discreta a su salida, de acuerdo con una secuencia de eventos.</p>
+
+			<p>En Beap, el objeto "bp.SampleAndHold" almacena un valor discreto de la señal de entrada (izquierda), y lo emite repetidamente a su salida hasta que reciba un nuevo "Trigger" por la entrada derecha. En el siguiente video utilizamos "bp.SampleAndHold" para disparar una nueva nota en el arpegio acorde al pulso metronómico, mejorando notoriamente el funcionamiento del sintetizador (pues cada nueva altura se sincroniza con el inicio del evento sonoro) y por ende la calidad de la salida de audio:</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/cZvsZoaFT3s" frameborder="0" allowfullscreen></iframe></p>
+
+			<p>Como en tutoriales anteriores, la posibilidad de encapsular (utilizando el comando "apple + shift + e") nos ayuda a mejorar el aspecto visual del patch.  En este caso, encapsulamos los objetos relacionados a la secuencia de eventos (observe que es necesario reiniciar la configuración de la secuencia después de que se realiza la encapsulación; posteriormente, los valores de los objetos GUI serán guardados junto con la configuración del programa al salvar el patch):</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/xX-ZtT4AHA0" frameborder="0" allowfullscreen></iframe></p>
+
+			<p>Finalmente, introducimos algunos procesos adicionales en nuestro flujo de señal, haciendo uso de los procesos disponibles mediante objetos Beap. En el siguiente video, invocamos el objeto "bp.Pan" para controlar la espacialización estero del sintetizador, así como el objeto "bp.SyncDelay" para introducir un efecto tipo "delay", que permite sincronizar el tiempo de los retardos con las unidades métricas y el tiempo global de Max. Adicionalmente, utilizamos un tercer LFO para modular la posición del sintetizador en la imagen estéreo, utilizando la entrada CV del objeto "bp.Pan":</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/BNtf5U5y030" frameborder="0" allowfullscreen></iframe></p>
+
+			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/2a1m8kq3pkspoxp/Tutorial%203%20-%20Patch%208.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+			<p><b>9. Señales de control aleatorias</b>. El siguiente video muestra como generar valores aleatorios dentro del subproceso de audio ("at signal-rate"), utilizando un generador de ruido blanco como el objeto nativo noise~. El ruido blanco es, por definición, una señal en la que todos los componentes de frecuencia están presentes de manera simultánea; por ende, a la salida del objeto noise~ la señal presenta valores aleatorios dentro del rango de frecuencia audible (es decir, números decimales entre 20 y 20.000), que pueden ser utilizados para controlar parámetros dentro del sintetizador, como por ejemplo, la duración de la etapa "Decay" de los generadores de envolvente.</p>
+
+			<p>Para ello, a la salida de noise~ utilizamos nuevamente una unidad de muestreo y retención ("Sample And Hold"), implementada esta vez por el objeto nativo sah~, quien recibe los valores aleatorios y congela un valor discreto de dicha señal cada vez que así lo indique la señal "Trigger", proveniente del objeto "bp.MetronomicPulse". A la salida de sah~ utilizamos el objeto scale~, el cual permite escalar el rango dinámico de la señal de entrada de acuerdo a un rango dinámico arbitrario (definido por el usuario, utilizando los argumentos del objeto); en este caso, escalamos el rango de la señal de voltaje de acuerdo al rango de duraciones de la etapa "Decay" que mejor nos parezca (por ejemplo, entre 1 y 5 voltios):</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/LZQ80jTSTm4" frameborder="0" allowfullscreen></iframe></p>
+
+			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/6jhfdx6uo1aecmp/Tutorial%203%20-%20Patch%209.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+			<p><b>10. Consideraciones finales</b>. La forma más estable de secuenciar eventos en Max es por medio de un pulso metronómico que se origine dentro del subproceso de audio, y no dentro del subproceso de datos, como lo hace el objeto "bp.MetronomicPulse". Para ello es posible utilizar el objeto phasor~, en conjunto con los argumentos "@frequency" y "@lock": el primer argumento indica a phasor~ el valor de su frecuencia de acuerdo a las unidades métricas de Max, mientras que el segundo configura su operación para que la fase de sus oscilaciones coincida con la fase del secuenciador global. A la salida de phasor~, el objeto <~ 0.001 evalúa la señal y entrega el valor 1 (verdadero) cuando la señal sea menor a 0.001 y 0 (falso) en caso contrario. De tal forma, obtenemos un valor positivo (1) cuando la señal es casi igual a 0 (pues en realidad nunca es igual a 0), es decir, cuando inicia una nueva oscilación ("Phase Wraparound"). Dicha señal puede ser utilizada de manera análoga al pulso metronómico de los ejemplos anteriores, más sin embargo, en este caso, obtenemos un reloj más preciso al que se le dará prioridad siempre que se activen las funciones "Scheduler In Overdrive" y "Audio Interrupt" (dentro de la ventana "Audio Settings") (más información en la <a href="Guia.html" target="_blank"> Guía rápida para programar Max</a>):</p>
+
+			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/qlMP2jzOWu8" frameborder="0" allowfullscreen></iframe></p>
+
+			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/mz73b1u2doyfe97/Tutorial%203%20-%20Patch%2010.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+			
+			<p>Referencias en <a href="https://www.zotero.org/groups/uniandes-dam/items" target="_blank">Zotero</a></p>
+			<br><br><br><br>
+
+			
