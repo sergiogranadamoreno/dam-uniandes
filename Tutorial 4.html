@@ -118,7 +118,7 @@
 
 			<ul>Tomado de Martin (2011) (<a href="http://www.tonmeister.ca/main/textbook"/><u>fuente</u></a>). </ul>
 
-			<p>En el diseño de un "sampler", es ideal implementar esta técnica para retener el cambio de las variables (p. ej. los extremos de la tabla), y actualizar su valor únicamente durante el cambio de fase del oscilador ("phase wraparound"), cuando la señal es menor a 0.001, es decir, muy cercana a 0 (pues en realidad nunca es igual a 0). En el video a continuación, utilizamos el objeto sig~ para convertir las salidas tres y cuatro del objeto waveform~ a señales de audio; posteriormente, utilizamos dos instancias del objeto sah~ para controlar dichas señales, de acuerdo a un "Trigger" sincronizado con el cambio de fase del oscilador:</p>
+			<p>Implementar esta técnia para el manejo de las variables en el "sampler" (p. ej. los extremos de la tabla) permite reducir significativamente la presencia de clics en la salida de audio. Para ello el objeto sah~ recibe una secuencia de eventos correspondientes al cambio de fase del oscilador ("phase wraparound"), momento en el que la señal es menor a 0.001, es decir, muy cercana a 0 (pues en realidad nunca es igual a 0). En el video a continuación, utilizamos el objeto sig~ para convertir las salidas tres y cuatro del objeto waveform~ a señales de audio; posteriormente, utilizamos dos instancias del objeto sah~ para controlar dichas señales, de acuerdo a un "Trigger" sincronizado con el cambio de fase del oscilador:</p>
 
 			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/dx8fCV8w62g" frameborder="0" allowfullscreen></iframe></p>
 
