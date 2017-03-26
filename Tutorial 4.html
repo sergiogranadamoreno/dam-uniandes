@@ -83,7 +83,7 @@
 			<ul>Tomado de Puckette (2007) (<a href="http://msp.ucsd.edu/techniques.htm"><u>fuente</u></a>). </ul>
 
 
-			<p>Utilizando la misma implementación es posible también reproducir archivos de audio; dado que buffer~ tiene acceso a la memoria <a href="https://en.wikipedia.org/wiki/Random-access_memory">RAM</a> del ordenador, el conjunto de valores dentro de la tabla de onda puede tomarse a partir de una ruta de acceso a un archivo de audio en el disco duro ("path"). Para ello es posible utilizar el mensaje "replace", o arrastrar un archivo de audio desde "Finder" hacia el objeto buffer~, como lo muestra el video a continuación:</p>
+			<p>Utilizando la misma implementación es posible también reproducir archivos de audio. Dado que buffer~ tiene acceso a la memoria <a href="https://en.wikipedia.org/wiki/Random-access_memory">RAM</a> del ordenador, el conjunto de valores dentro de la tabla de onda puede tomarse a partir de una ruta de acceso a un archivo de audio en el disco duro ("path"). Para ello es posible utilizar el mensaje "replace", o arrastrar un archivo de audio desde "Finder" hacia el objeto buffer~, como lo muestra el video a continuación:</p>
 
 			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/oA9TLnkXvwg" frameborder="0" allowfullscreen></iframe></p>
 
@@ -109,7 +109,7 @@
 
 			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/f68yhkmcf9pzmm8/Sampling%20-%20patch%205.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
 
-			<p>Intercambiando entre los modos "select" y "loop" es posible seleccionar porciones del archivo de audio deliberadamente e interpolar entre ellas; dichos modos son habilitados por medio del objeto [attrui]. Sin embargo, como resulta evidente en el video anterior, el patch presenta una gran cantidad de clics y pops, es decir, cortes en la salida de audio generados por discontinuidades en las señales que están siendo manipuladas (siempre que exista una discontinuidad en los valores de amplitud entre dos "samples" consecutivos, se generará un corte en la señal de audio). Para solventar este problema es necesario incluir dos técnicas en el diseño del patch: "sample and hold" y "windowing".</p>
+			<p>Intercambiando entre los modos "select" y "loop" es posible seleccionar porciones del archivo de audio deliberadamente e interpolar entre ellas; dichos modos son habilitados por medio del objeto [attrui]. Sin embargo, como resulta evidente en el video anterior, el patch presenta una gran cantidad de clics y pops, es decir, cortes en la salida de audio generados por discontinuidades en las señales que están siendo manipuladas (siempre que exista una discontinuidad en los valores de amplitud entre dos "samples" consecutivos de una señal de audio digital, se generará un corte en la salida de audio). Para solventar este problema es necesario implementar dos técnicas en el diseño del patch: "sample and hold" y "windowing".</p>
 
 			<p><u>I. "Sample And Hold".</u> Como se describió en el tutorial anterior, la unidad de muestreo y retención ("sample and hold") congela ciertos valores de una señal de audio de acuerdo a una secuencia de eventos en el tiempo ("Trigger"). A su salida, obtenemos una señal "escalonada" (semejante a una señal discreta), en donde cada nuevo escalón coincide con uno de los eventos de la secuencia:</p><br><br>
 
