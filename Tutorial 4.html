@@ -118,7 +118,7 @@
 
 			<ul>Tomado de Martin (2011) (<a href="http://www.tonmeister.ca/main/textbook"/><u>fuente</u></a>). </ul>
 
-			<p>Implementar esta técnia para el manejo de las variables en el "sampler" (p. ej. los extremos de la tabla) permite reducir significativamente la presencia de clics en la salida de audio. Para ello el objeto sah~ recibe una secuencia de eventos correspondientes al cambio de fase del oscilador ("phase wraparound"), momento en el que la señal es menor a 0.001, es decir, muy cercana a 0 (pues en realidad nunca es igual a 0). En el video a continuación, utilizamos el objeto sig~ para convertir las salidas tres y cuatro del objeto waveform~ a señales de audio; posteriormente, utilizamos dos instancias del objeto sah~ para controlar dichas señales, de acuerdo a un "Trigger" sincronizado con el cambio de fase del oscilador:</p>
+			<p>Implementar esta técnia para el manejo de las variables en el "sampler" (p. ej. los extremos de la tabla) permite reducir significativamente la presencia de clics en la salida de audio. Para ello el objeto sah~ recibe una secuencia de eventos correspondientes al cambio de fase del oscilador ("phase wraparound"), momento en el que la señal es menor a 0.001, es decir, muy cercana a 0 (pues en realidad nunca es igual a 0). En el video a continuación, utilizamos el objeto sig~ para convertir las salidas tres y cuatro del objeto waveform~ a señales de audio; posteriormente, utilizamos dos instancias del objeto sah~ para controlar dichas señales:</p>
 
 			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/dx8fCV8w62g" frameborder="0" allowfullscreen></iframe></p>
 
@@ -154,6 +154,8 @@
 			<p>Observe que al cargar un archivo de audio en el buffer~, el objeto info~ actualiza el valor de la señal y permite la reproducción de dicho archivo de acuerdo a la altura y longitud original. Al reducir el tamaño de la tabla a menos de 100 milisegundos, es posible interpolar la posición de lectura y conseguir un efecto tipo "time-stretching":</p>
 
 			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/azlQ5BvD2Oo" frameborder="0" allowfullscreen></iframe></p>
+
+			<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/okb0wwqn1s4rroo/Sampling%20-%20patch%206b.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
 
 			<p>Descargue este patch y pruebe a variar el tamaño de la tabla para cualquier archivo de audio. Observe que, en comparación con la implementación inicial de este tutorial, la altura de la salida del "sampler" no se modifica al cambiar el segmento de la tabla, o, al menos, no de manera permanente, sino momentánea (Puckette 2007, p. 33). Esto permite, por ejemplo, pedir copias de la lectura de la tabla incluyendo segmentos de silencio entre ellas, o, en sentido contrario, logrando que se superpongan (Puckette 2007, p. 40). En otras palabras, el oscilador lee la tabla acorde a un grado de transposición deseado, cuyo control es independiente del tamaño, como lo muestra el video a continuación:</p> 
 
