@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<!--               head               -->
+<head>
+  <meta charset="utf-8">
+  <meta name="index" content="Sergio Granada-Moreno Portfolio">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title> Diseño de aplicaciones musicales</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="http://sergiogranadamoreno.tk/">
+	<link href="http://musica.uniandes.edu.co/">
+	<link href="http://uniandes.edu.co/">
+	<link href="http://sergiogranadamoreno.tk/">
+  <link href="https://www.zotero.org/groups/uniandes-dam/items">
+
+	<!-- IE Mobile 10.0 rendering bug fix -->
+    <script>(function(){if("-ms-user-select"in document.documentElement.style&&navigator.userAgent.match(/IEMobile\/10\.0/)){var a=document.createElement("style");a.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));document.getElementsByTagName("head")[0].appendChild(a)}})();</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="revisit-after" content="3 days" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Diseño de aplicaciones musicales" />
+    <meta property="og:url" content="http://dam.uniandes.edu.co" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://i.imgsafe.org/98b3b7c893.png" />
+
+  </head>
+<!--               body               -->
+<body>
+
+	    <header id="site-header" class="group">
+
+	        <div class="logo">
+            
+          	<!-- start of freefind search box html -->
+		<table cellpadding=0 cellspacing=0 border=0 >
+		<tr><td  style="font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;">
+		<form style="margin:0px; margin-top:4px;" action="http://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+		<input type="hidden" name="si" value="17718934">
+		<input type="hidden" name="pid" value="r">
+		<input type="hidden" name="n" value="0">
+		<input type="hidden" name="_charset_" value="">
+		<input type="hidden" name="bcd" value="&#247;">
+		<input type="text" name="query" size="15"> 
+		<input type="submit" value="search">
+		</form></td></tr>
+		<tr><td style="text-align:left; font-family: Arial, Helvetica, sans-serif;font-size: 7.5pt;padding-top:4px;"></td></tr></table>
+		<!-- end of freefind search box html -->
+
+          <nav id="access" role="navigation">
+          <h3 class="assistive-text">Main menu</h3>
+          <div class="skip-link"><a class="assistive-text" href="#content">Skip to primary content</a></div>
+          <div class="menu-main-menu-container">
+          <ul id="menu-main-menu" class="menu"><li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="index.html"> Currículo </a></li>
+          <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="Guia.html">Guía rápida</a></li>
+          <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="Tutoriales.html">Tutoriales</a></li>
+          <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-31"><a href="Ejemplos.html">Enlaces web</a></li>
+          <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="Links.html">Lectura sugerida</a></li>
+          <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="Bibliografia.html">Bibliografía</a></li>
+          <li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="Contacto.html">Contacto</a></li>
+          </ul></div>     </nav><!-- #access -->
+	        </div>
+	    </header>
+	    <p><b><br><br><br><br>Introducción a la síntesis FM (Tutorial 2)</b></p>
+
+				<p><b>1. Modulación.</b> El término "modulación" se refiere libremente a cualquier técnica que altere sistemáticamente la forma de onda de una señal, modificando su gráfica de manera vertical u horizontal (<a href="http://msp.ucsd.edu/techniques.htm" target="_blank">Puckette 2007</a>, p. 119). De hecho, podemos afirmar que el control de la amplitud de una sinusoidal, presentado en ejemplos anteriores, es como tal una modulación de la amplitud, en la que variamos la gráfica de la señal de manera vertical:</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/p7-NwNeNW_Y" frameborder="0" allowfullscreen></iframe></p> 
+
+				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/ijpzobwuhdvj0p4/tutorial%202%20-%20patch%201.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+				<p>El mejor ejemplo para entender la modulación de la amplitud (AM) es el trémolo. En este caso, el control de amplitud no es una señal estática (como el objeto sig~ del ejemplo anterior), sino una sinusoidal adicional que oscila lentamente, por debajo del rango audible (0 - 10 HZ, <20hz). En el siguiente ejemplo se puede escuchar como el valor de la frecuencia moduladora es proporcional a la velocidad del tremolo:</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/6AR3DD6TWtk" frameborder="0" allowfullscreen></iframe></p> 
+
+				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/1v0ty8dqdrwdnlz/tutorial%202%20-%20patch%202.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+				<p>En el patch anterior, al oscilador de baja frecuencia (0 a 10 HZ, <20hz) se le denomina la señal moduladora, puesto que su salida modula la amplitud de la sinusoidal, a quien se le denomina, en cambio, la señal portadora.</p>
+
+				<p>En el diseño de sintetizadores, el término "<a href="https://en.wikipedia.org/wiki/Low-frequency_oscillation" target="_blank">LFO</a>" (siglas en inglés para "oscilador de baja frecuencia") refiere al empleo de este tipo de señales para modular parámetros del sonido. En términos prácticos, un LFO no es distinto a un objeto generador de señal, y como vimos en el ejemplo anterior, puede ser implementado utilizando cycle~. </p>
+
+				<p>En el siguiente ejemplo, controlamos la frecuencia del LFO de acuerdo al tiempo del secuenciador global de Max, utilizando el objeto [transport]:</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/o7jkUQnWG6s" frameborder="0" allowfullscreen></iframe></p> 
+
+				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/yjkwuem5zmv0sre/tutorial%202%20-%20patch%203.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+				<p>Max habilita un secuenciador global con el que es posible interactuar al interior de los patches por medio del objeto [transport]. La forma más rápida de controlar dicho secuenciador es por medio de la ayuda de [transport], utilizando el botón “Open Global Transport”, el cual se puede copiar y pegar al interior de nuestros patches.</p>
+
+				<p>Para obtener el valor "<a href="https://en.wikipedia.org/wiki/Tempo" target="_blank">bpm</a>" del secuenciador global de Max, utilizamos la salida número cinco de [transport] para convertir de "<a href="https://en.wikipedia.org/wiki/Tempo" target="_blank">bpm</a>" a Hz, con el fin de sincronizar el ciclo del LFO (la frecuencia de cycle~) con el "bpm" global. Adicionalmente, intercambiamos cycle~ por phasor~, un oscilador diente de sierra ("sawtooth oscillator"), ampliamente utilizado también como LFO. Cuando se utiliza phasor~, se hace evidente la necesidad de implementar rampsmooth~ a su salida, con el fin de "suavizar" la señal y evitar el corte de audio.</p>
+
+				<p><b>2. Síntesis FM ("Frequency Modulation").</b> Consideremos la situación en la que una señal moduladora no controla la amplitud de la portadora sino en cambio, su frecuencia. Si utilizamos sinusoidales, escucharemos un cambio en la altura del sonido percibido a manera de vibrato, con un patrón sinusoidal correspondiente a la salida de cycle~. Si dicha oscilación se encuentra en cambio dentro del rango audible (por arriba de 20 Hz), el ciclo es muy veloz, y por ende, percibimos cambio en el timbre del sonido:</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/scI92Lb3Aro" frameborder="0" allowfullscreen></iframe></p> 
+
+				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/gszieph152sbtud/tutorial%202%20-%20patch%204.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+
+				<p>Lo que sucede es que la frecuencia, al ser modulada tan rápidamente, genera nuevos componentes ("sidebands") alrededor de la frecuencia portadora, en distintos tipos de proporción, armónica e inarmónica. </p>
+
+				<p>En Max podemos implementar síntesis FM de la siguiente forma: iniciamos por definir la señal moduladora ("M"), utilizando una caja de valores decimales conectada a un oscilador y a un posterior control de amplitud (el cual llamaremos "index"). La salida de la moduladora se suma al valor de la frecuencia portadora ("C", del inglés, "carrier"), y el resultado se entrega al oscilador de la portadora:</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/TKljmtKy_iw" frameborder="0" allowfullscreen></iframe></p> 
+
+				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/wtwh9o0jow7vf7l/tutorial%202%20-%20patch%205.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+				<p>En pocos segundos resulta evidente que la amplitud de la moduladora ("index") es proporcional al número de componentes en el espectro que resulta. Dichos componentes surgen en el espectro alrededor de la frecuencia portadora "C", distribuidos de manera equitativa a una distancia equivalente a la frecuencia moduladora "M". </p><p>A continuación algunas observaciones (<a href="http://www.sfu.ca/~truax/fmtut.html." target="_blank">Truax 2014</a>):</p><br>
+
+				<ul class="small">El grupo de componentes que aparecen por arriba la portadora ("upper sidebands") corresponde a: C+M C+2M C+3M C+4M C+5M ....<br>
+				El grupo de componentes que aparecen por debajo de la portadora ("lower sidebands") corresponde a: C-M C-2M C-3M C-4M C-5M …<br>
+				La amplitud de la moduladora ("index") se relaciona al número de componentes que resultan en parejas arriba y abajo de la frecuencia portadora. <br>
+				Para C=1, M=2, el primer componente por debajo de la portadora es: <br>
+				/C-M/ = /1-2/ = /-1/ =1.</ul>
+
+				<p>En el siguiente ejemplo encontramos los valores en frecuencia de los parciales de acuerdo a las observaciones anteriores, utilizando objetos de aritmética simple y [pak] para sincronizar las operaciones:</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/_KcM-XwjePc" frameborder="0" allowfullscreen></iframe></p> 
+
+				<p>A partir de dichos valores es posible implementar objetos GUI como [nslider], para visualizar polifonicamente la correspondencia en valores MIDI de los (seis primeros) componentes predecibles del espectro FM:</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/Onlc87JNBcA" frameborder="0" allowfullscreen></iframe></p> 
+
+				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/buo0vg39m3htcd2/tutorial%202%20-%20patch%207.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+				<p>Objetos como spectroscope~ permiten también visualizar el cambio de la información espectral dentro del patch. Observe que utilizando el menú "transform" (min. 2'23") es posible invocar prototipos para ciertos objetos, en este caso, agilizando la configuración gráfica de su preferencia:</p><br><br>
+
+				<ul><img src="images/tutorial2_1.png" width="30%" height="30%"/></ul>
+
+				<p>Más info sobre el menú "transform" <a href="https://cycling74.com/2016/07/05/max-7s-transform-menu-revealed/" target="_blank">aquí</a>.</p>
+
+				<p>3. <b>"Fixed CM ratio"</b>.<i> </i>En síntesis FM es usual utilizar la proporción entre las frecuencias "C" y "M" para predecir el grupo de componentes que componen el espectro, por lo que se dice es una técnica de modelado espectral ("spectral modelling") (Chowning, Truax). Dicha técnica utiliza la proporción C:M para predecir la producción de espectros armónicos e inarmónicos. Particularmente, se dice que las proporciones en la forma 1:N producen espectros armónicos. Por ejemplo:</p>
+
+				<p>Espectros armónicos: 1:1 1:2 1:3 1:4 1:5 1:6 1:7 1:8 1:9</p>
+
+				<p>Espectros inarmónicos: 2:9 2:7 3:8 2:5 2:7 4:9</p>
+
+				<p>… considerando que 1:2 = 2:4, 1:3 = 2:6, etc.</p>
+
+				<p>En el siguiente ejemplo, utilizamos el parámetro HR ("Harmonicity Ratio") para alternar entre espectros armónicos y espectros inarmónicos:</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/4HkS8QbDRRM" frameborder="0" allowfullscreen></iframe></p> 
+
+				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/2dg0ccn6jg6m8fn/tutorial%202%20-%20patch%208.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+				<p>Considerando que los espectros armónicos: </p><p>1:1 1:2 1:3 1:4 1:5 1:6 1:7 1:8 1:9 </p><p>son equivalentes a: </p><p>1 0.5 0.33 0.25 0.2 0.16 0.1428 0.11 </p><p>Es posible utilizar el parámetro HR para predecir espectros armónicos como se muestra a continuación:</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/mSP1t_bkhkA" frameborder="0" allowfullscreen></iframe></p> 
+
+				<p>4. <b>"FM Brass"</b>. En síntesis FM es usual escalar el "index" de la modulación por el valor de la frecuencia "C" (entre más agudo el sonido, mayor la modulación). Por qué se hace esto? Jean-Claude Risset, a quien mencionamos en el tutorial anterior, observó a partir de análisis espectral que el ancho de banda del sonido emitido por los cobres ("brass tones") es proporcional a su amplitud total. En otras palabras, que el espectro gana energía en los brillos de manera proporcional a su amplitud. Esto inspiró la técnica "FM brass synthesis" de John Chowning (en 1970), en la que el "index" se hace proporcional a la frecuencia de la portadora ("C") (<a href="http://beausievers.com/synth/synthbasics/" target="_blank">Sievers 2017</a>), generando una constante entre la "fundamental" y la cantidad de componentes que resultan. El siguiente video modifica el patch anterior para escalar de el valor "index" de esta forma:</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/8P3pevM_a28" frameborder="0" allowfullscreen></iframe></p> 
+
+				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/wqynn5kxlgaie54/tutorial%202%20-%20patch%209.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+				<p>5. <b>"Signal-rate"</b>. Debido a que Max maneja subprocesadores es posible definir una prioridad en la ejecución de datos y audio (más información sobre esto en la <a href="https://sergiogranadamoreno.github.io/dam-uniandes/Guia.html" target="_blank"><i>Guía rápida para programar Max</i></a>). Por ello es siempre recomendable (y para obtener una mejor calidad en el procesamiento de señal) conservar las operaciones de control dentro del subproceso de audio. Modificando el patch de manera superficial, es posible convertir nuestras operaciones aritméticas de datos a señales de audio, con el fin de que tengan prioridad en la ejecución del programa :</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/ZpkMtpjTOVo" frameborder="0" allowfullscreen></iframe></p> 
+
+				<p>Retomando el inicio del tutorial, podemos utilizar de nuevo phasor~ a manera de LFO, esta vez para controlar la fase de la moduladora, y crear una transformación cíclica del espectro, sincronizable con el "bpm" global del secuenciador de Max:</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/r5HATNEv0XQ" frameborder="0" allowfullscreen></iframe></p> 
+
+				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/59peeet0dtmla32/tutorial%202%20-%20patch%2010.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+				<p>Además de modular la fase, el LFO puede multiplicar cualquiera de las señales dentro del patch; de hecho, es este fenómeno lo que fundamenta la tecnología modular y los sintetizadores analógicos, que se interconectan utilizando <a href="https://en.wikipedia.org/wiki/CV/gate" target="_blank">CV</a>. En el ejemplo anterior, aplicamos el LFO de manera simultánea a la fase y el "index" de la modulación.</p>
+
+				<p>5. <b>"Multiple Carrier FM Synthesis". </b>Chowning, inventor de la síntesis FM, reconoce que resulta difícil agotar las posibilidades tímbricas de un motor sonoro como el del Yamaha DX7, que tiene tan solo seis portadoras. En el ejemplo a continuación, configuramos a partir del patch anterior síntesis FM utilizando seis múltiples portadoras, por medio de la encapsulación ("apple + shift + e"): </p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/X3HGD6i4qog" frameborder="0" allowfullscreen></iframe></p> 
+
+				<p>Observe que para visualizar por medio de [nslider] los parciales del patch anterior, es necesario volver a computar "M" como en el video cinco de este tutorial:</p>
+
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/LsYW5DMLrhg" frameborder="0" allowfullscreen></iframe></p> 
+
+				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/cat7nrc8e7bmlc3/tutorial%202%20-%20patch%2012.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
+
+				<p><u>Algunas consideraciones finales (</u><a href="https://cycling74.com/forums/topic/carrier-and-harmonicity-in-fm-synthesis/#.WCQAUyMrL-k" target="_blank"><u>McCulloch, Chowning</u></a><u>): </u>una proporción igual a 1 (1:1) tendrá potencialmente todos los armónicos naturales, mientras que una proporción igual a 2 tendrá sólo los armónicos impares. Entre mayor la proporción (p. ej. 2:3 = 0.6 > 1:2 = 0.5) más amplia la distribución de los componentes alrededor de la portadora. Valores decimales cercanos al valor entero (1.995 vs 2.0) pueden arrojar resultados sonoros más interesantes debido a los batidos y modulaciones sutiles que producen. Más info <a href="https://cycling74.com/forums/topic/carrier-and-harmonicity-in-fm-synthesis/#.WCQAUyMrL-k" target="_blank"> aquí </a>.</p>				
+				
+				<p><u>Acerca de la percepción de altura ("pitch"): </u>la altura de un sonido puede o no ser deducida a partir de su espectro armónico. Para espectros discretos (armónicos e inarmónicos), la altura percibida se relaciona principalmente con las frecuencias de los parciales de mayor amplitud. Los espectros armónicos tienen una altura determinada por su frecuencia fundamental; en los espectros inarmónicos la altura puede ser en cambio, clara, ambigua o ausente por completo, según reglas complejas y no completamente entendidas. En general, la sonoridad y el timbre de un sonido dependen más de su envolvente espectral que de las frecuencias presentes en el espectro, aunque la diferencia entre espectros continuos y discretos también puede ser escuchada como una diferencia en timbre (<a href="http://msp.ucsd.edu/techniques.htm" target="_blank">Puckette 2007, p. 121</a>).</p>
+
+				<!--
+				<p>Bibliografía:</p>
+
+				<p>Chowning, John, and Peter McCulloch. “Topic: Carrier and Harmonicity in Fm Synthesis | Cycling ’74.” Accessed November 10, 2016. https://cycling74.com/forums/topic/carrier-and-harmonicity-in-fm-synthesis/#.WCQAUyMrL-k.</p>
+
+				<p>Puckette, Miller. The Theory and Technique of Electronic Music. World Scientific Publishing Co. Pte. Ltd., 2007. <a href="http://msp.ucsd.edu/techniques.htm" rel="nofollow">http://msp.ucsd.edu/techniques.htm</a>.</p>
+
+				<p>Sievers, Beau. “A Young Person’s Guide to the Principles of Music Synthesis.” Accessed January 17, 2017. http://beausievers.com/synth/synthbasics/.</p>
+
+				<p>Truax, Barry. “FM Tutorial.” Accessed October 25, 2014. http://www.sfu.ca/~truax/fmtut.html.</p>
+				-->
+
+			
+			<p>Referencias en <a href="https://www.zotero.org/groups/uniandes-dam/items" target="_blank">Zotero</a></p>
+			<br><br><br><br>
+
+	<footer>
+      <a href="#site-header">Back To Top</a><br><br>
+      </footer>
+
+			
