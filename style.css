@@ -84,7 +84,7 @@ h1 {
   margin: -1cm 2cm 0cm 2cm;
   background-color: transparent;
   font-size: 22px;
-  font-family: 'Quicksand';
+  font-family: 'Times New Roman';
   text-align: left;
   text-shadow: 1px 0.9px #A9A9A9;
   border-style: hidden;
@@ -97,7 +97,7 @@ h2 {
   color: transparent;
   margin: 0cm 0cm 0cm 2cm;
   padding-left: 0cm;
-  font-family: 'Quicksand';
+  font-family: 'Times New Roman';
   font-size: 12px;
   background-color: transparent;
   text-align: left;
@@ -108,7 +108,7 @@ h2 {
 
 h3 {
   color: transparent;
-  font-family: 'Quicksand';
+  font-family: 'Times New Roman';
   font-size: 10px;
   margin: 0cm 0cm 0cm 2cm;
   display: block;
@@ -130,7 +130,7 @@ h5 {
   letter-spacing: -2px;
   font-size: 15px;
   background-color: transparent;
-  font-family: 'Quicksand';
+  font-family: 'Times New Roman';
   text-align: right;
   border-style: hidden;
   display: block;
@@ -139,7 +139,7 @@ h5 {
 
 content {
     letter-spacing: -1px;
-    font-family: 'Quicksand';
+    font-family: 'Times New Roman';
     font-size: 16px;
     background-color: transparent;
     font-family: 'Play', sans-serif;
@@ -172,7 +172,7 @@ p {
 }
 
 blockquote {
-	font-family: 'Quicksand';
+	font-family: 'Times New Roman';
 	font-style: italic;
 	font-weight: normal;
 	margin: 0cm 2cm 0cm 2cm;
@@ -181,7 +181,7 @@ blockquote {
 /* ul is the menu */
 
 ul, ol {
-	font-family: 'Quicksand';
+	font-family: 'Times New Roman';
 	margin: 0cm 3cm 0cm 2cm;
 	font-style: normal;
 	font-weight: normal;
@@ -227,14 +227,14 @@ blockquote em, blockquote i, blockquote cite {
 }
 blockquote cite {
 	color: #666;
-	font-family: 'Quicksand';
+	font-family: 'Times New Roman';
 	font-weight: 300;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 }
 pre {
 	background: #f4f4f4;
-	font-family: 'Quicksand';
+	font-family: 'Times New Roman';
 	line-height: 1.5;
 	margin: 0cm 2cm 0cm 2cm;
 	margin-bottom: 1.625em;
@@ -242,7 +242,7 @@ pre {
 	padding: 0.75em 1.625em;
 }
 code, kbd, samp, var {
-	font-family: 'Quicksand';
+	font-family: 'Times New Roman';
 }
 abbr, acronym, dfn {
 	border-bottom: 1px dotted #666;
