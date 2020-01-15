@@ -89,9 +89,9 @@
 
 				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/yjkwuem5zmv0sre/tutorial%202%20-%20patch%203.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
 
-				<p>Max habilita un secuenciador global con el que es posible interactuar al interior de los patches por medio del objeto [transport]. La forma más rápida de controlar dicho secuenciador es por medio de la ayuda de [transport], utilizando el botón “Open Global Transport”, el cual se puede copiar y pegar al interior de nuestros patches.</p>
+				<p>Max habilita un secuenciador global con el que es posible interactuar al interior de los patches por medio del objeto [transport]. El acceso a la ayuda de [transport] permite copiar y pegar el botón “Open Global Transport”, el cual invoca la interfáz gráfica del secuenciador global ya mencionado.</p>
 
-				<p>Para obtener el valor "<a href="https://en.wikipedia.org/wiki/Tempo" target="_blank">bpm</a>" del secuenciador global de Max, utilizamos la salida número cinco de [transport] para convertir de "<a href="https://en.wikipedia.org/wiki/Tempo" target="_blank">bpm</a>" a Hz, con el fin de sincronizar el ciclo del LFO (la frecuencia de cycle~) con el "bpm" global. Adicionalmente, intercambiamos cycle~ por phasor~, un oscilador diente de sierra ("sawtooth oscillator"), ampliamente utilizado también como LFO. Cuando se utiliza phasor~, se hace evidente la necesidad de implementar rampsmooth~ a su salida, con el fin de "suavizar" la señal y evitar el corte de audio.</p>
+				<p>Para obtener el valor "<a href="https://en.wikipedia.org/wiki/Tempo" target="_blank">bpm</a>" del secuenciador global de Max, utilizamos la salida número cinco de [transport] para convertir de "<a href="https://en.wikipedia.org/wiki/Tempo" target="_blank">"bpm"</a>" a Hz, con el fin de sincronizar el ciclo del LFO (la frecuencia de cycle~) con el tiempo global. Adicionalmente, intercambiamos el objeto cycle~ por phasor~, un oscilador diente de sierra ("sawtooth oscillator"). Cuando se utiliza phasor~, se hace evidente la necesidad de implementar rampsmooth~ a su salida, con el fin de "suavizar" la señal y evitar el corte de audio.</p>
 
 				<p><b>2. Síntesis FM ("Frequency Modulation").</b> Consideremos la situación en la que una señal moduladora no controla la amplitud de la portadora sino en cambio, su frecuencia. Si utilizamos sinusoidales, escucharemos un cambio en la altura del sonido percibido a manera de vibrato, con un patrón sinusoidal correspondiente a la salida de cycle~. Si dicha oscilación se encuentra en cambio dentro del rango audible (por arriba de 20 Hz), el ciclo es muy veloz, y por ende, percibimos cambio en el timbre del sonido:</p>
 
@@ -108,7 +108,7 @@
 
 				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/wtwh9o0jow7vf7l/tutorial%202%20-%20patch%205.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
 
-				<p>En pocos segundos resulta evidente que la amplitud de la moduladora ("index") es proporcional al número de componentes en el espectro que resulta. Dichos componentes surgen en el espectro alrededor de la frecuencia portadora "C", distribuidos de manera equitativa a una distancia equivalente a la frecuencia moduladora "M". </p><p>A continuación algunas observaciones (<a href="http://www.sfu.ca/~truax/fmtut.html." target="_blank">Truax 2014</a>):</p><br>
+				<p>En pocos segundos resulta evidente que la amplitud de la moduladora ("index") es proporcional al número de componentes en el espectro que resulta. Dichos componentes surgen en el espectro alrededor de la frecuencia portadora "C", distribuidos de manera equitativa a una distancia equivalente a la frecuencia moduladora "M". </p><p>A continuación algunas observaciones tomadas de Barry Truax (<a href="http://www.sfu.ca/~truax/fmtut.html." target="_blank">Truax 2014</a>):</p><br>
 
 				<ul class="small">El grupo de componentes que aparecen por arriba la portadora ("upper sidebands") corresponde a: C+M C+2M C+3M C+4M C+5M ....<br>
 				El grupo de componentes que aparecen por debajo de la portadora ("lower sidebands") corresponde a: C-M C-2M C-3M C-4M C-5M …<br>
@@ -132,7 +132,7 @@
 
 				<p>Más info sobre el menú "transform" <a href="https://cycling74.com/2016/07/05/max-7s-transform-menu-revealed/" target="_blank">aquí</a>.</p>
 
-				<p>3. <b>"Fixed CM ratio"</b>.<i> </i>En síntesis FM es usual utilizar la proporción entre las frecuencias "C" y "M" para predecir el grupo de componentes que componen el espectro, por lo que se dice es una técnica de modelado espectral ("spectral modelling") (Chowning, Truax). Dicha técnica utiliza la proporción C:M para predecir la producción de espectros armónicos e inarmónicos. Particularmente, se dice que las proporciones en la forma 1:N producen espectros armónicos. Por ejemplo:</p>
+				<p>3. <b>"Fixed CM ratio"</b>.<i> </i>En síntesis FM es usual utilizar la proporción entre las frecuencias "C" y "M" para predecir el grupo de componentes que componen el espectro, por lo que se dice que es una técnica de modelado espectral ("spectral modelling") (Chowning, Truax). Dicha técnica utiliza la proporción entre las frecuencias de la portadora y la moduladora para predecir la producción de espectros armónicos e inarmónicos (C:M). Particularmente, se dice que las proporciones en la forma 1:N producen espectros armónicos. Por ejemplo:</p>
 
 				<p>Espectros armónicos: 1:1 1:2 1:3 1:4 1:5 1:6 1:7 1:8 1:9</p>
 
@@ -140,7 +140,7 @@
 
 				<p>… considerando que 1:2 = 2:4, 1:3 = 2:6, etc.</p>
 
-				<p>En el siguiente ejemplo, utilizamos el parámetro HR ("Harmonicity Ratio") para alternar entre espectros armónicos y espectros inarmónicos:</p>
+				<p>En el siguiente ejemplo se ilustra cómo definir un parámetro que permita alternar entre espectros armónicos e inarmónicos, al cual se le denomina "HR" del inglés "harmonicity ratio":</p>
 
 				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/4HkS8QbDRRM" frameborder="0" allowfullscreen></iframe></p> 
 
@@ -150,7 +150,7 @@
 
 				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/mSP1t_bkhkA" frameborder="0" allowfullscreen></iframe></p> 
 
-				<p>4. <b>"FM Brass"</b>. En síntesis FM es usual escalar el "index" de la modulación por el valor de la frecuencia "C" (entre más agudo el sonido, mayor la modulación). Por qué se hace esto? Jean-Claude Risset, a quien mencionamos en el tutorial anterior, observó a partir de análisis espectral que el ancho de banda del sonido emitido por los cobres ("brass tones") es proporcional a su amplitud total. En otras palabras, que el espectro gana energía en los brillos de manera proporcional a su amplitud. Esto inspiró la técnica "FM brass synthesis" de John Chowning (en 1970), en la que el "index" se hace proporcional a la frecuencia de la portadora ("C") (<a href="http://beausievers.com/synth/synthbasics/" target="_blank">Sievers 2017</a>), generando una constante entre la "fundamental" y la cantidad de componentes que resultan. El siguiente video modifica el patch anterior para escalar de el valor "index" de esta forma:</p>
+				<p>4. <b>"FM Brass"</b>. En síntesis FM es usual escalar la cantidad de modulación (correspondiente al valor "index") de acuerdo al valor de la frecuencia ("C"), de forma tal que entre más agudo sea el sonido, mayor la modulación. Por qué se hace esto? Jean-Claude Risset, a quien mencionamos en el tutorial anterior, observó a partir de análisis espectral que el ancho de banda del sonido emitido por los metales ("brass tones") es proporcional a su amplitud total. En otras palabras, que el espectro gana energía en los brillos de manera proporcional a su amplitud. Esto inspiró la técnica "FM brass synthesis" de John Chowning, quien en 1970 utilizó indices de modulación proporcionales a la frecuencia de la portadora, generando una constante entre la altura fundamental y la cantidad de componentes ("sidebands") que resultan (<a href="http://beausievers.com/synth/synthbasics/" target="_blank">Sievers 2017</a>). El siguiente video modifica el patch anterior para escalar de el valor "index" de acuerdo a la altura fundamental del sonido producido:</p>
 
 				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/8P3pevM_a28" frameborder="0" allowfullscreen></iframe></p> 
 
@@ -166,7 +166,7 @@
 
 				<blockquote>Descargue este patch <a href="https://www.dropbox.com/s/59peeet0dtmla32/tutorial%202%20-%20patch%2010.maxpat?dl=0" target="_blank"> aquí</a>.</blockquote>
 
-				<p>Además de modular la fase, el LFO puede multiplicar cualquiera de las señales dentro del patch; de hecho, es este fenómeno lo que fundamenta la tecnología modular y los sintetizadores analógicos, que se interconectan utilizando <a href="https://en.wikipedia.org/wiki/CV/gate" target="_blank">CV</a>. En el ejemplo anterior, aplicamos el LFO de manera simultánea a la fase y el "index" de la modulación.</p>
+				<p>Además de modular la fase, la salida del LFO puede afectar otros parámetros del sonido (en el ejemplo anterior la salida del LFO controla de manera simultánea a la fase y el "index" de la modulación).</p>
 
 				<p>5. <b>"Multiple Carrier FM Synthesis". </b>Chowning, inventor de la síntesis FM, reconoce que resulta difícil agotar las posibilidades tímbricas de un motor sonoro como el del Yamaha DX7, que tiene tan solo seis portadoras. En el ejemplo a continuación, configuramos a partir del patch anterior síntesis FM utilizando seis múltiples portadoras, por medio de la encapsulación ("apple + shift + e"): </p>
 
