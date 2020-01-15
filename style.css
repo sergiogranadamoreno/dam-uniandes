@@ -143,7 +143,9 @@ content {
     font-size: 18px;
     background-color: transparent;
     font-family: 'Play', sans-serif;
+    spacing: 2px;
     text-align: left;
+
   }
 
 footer {
@@ -167,6 +169,7 @@ p {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 24px;
 	letter-spacing: 1px;
+	spacing: 2px;
 	line-height: 20px;
 
 }
