@@ -143,7 +143,7 @@ content {
     font-size: 18px;
     background-color: transparent;
     font-family: 'Play', sans-serif;
-    spacing: 4px;
+    padding: 2px;
     text-align: left;
 
   }
@@ -169,7 +169,7 @@ p {
 	font-family: 'Lato', sans-serif;
 	font-size: 24px;
 	letter-spacing: 1px;
-	spacing: 4px;
+	padding: 4px;
 	line-height: 20px;
 
 }
