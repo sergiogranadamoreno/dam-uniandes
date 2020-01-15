@@ -138,7 +138,7 @@ h5 {
 }
 
 content {
-    letter-spacing: -1px;
+    letter-spacing: 2px;
     font-family: 'Quicksand';
     font-size: 18px;
     background-color: transparent;
@@ -166,7 +166,7 @@ p {
 	text-align: justify;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 24px;
-	letter-spacing: 0px;
+	letter-spacing: 2px;
 	line-height: 20px
 
 }
