@@ -138,13 +138,14 @@ h5 {
 }
 
 content {
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-family: 'Quicksand';
     font-size: 18px;
     background-color: transparent;
     font-family: 'Play', sans-serif;
     padding: 2px;
     text-align: left;
+	border-spacing: 5em;
 
   }
 
@@ -171,6 +172,7 @@ p {
 	letter-spacing: 1px;
 	padding: 4px;
 	line-height: 20px;
+	border-spacing: 5em;
 
 }
 
@@ -179,6 +181,7 @@ blockquote {
 	font-style: italic;
 	font-weight: normal;
 	margin: 0cm 2cm 0cm 2cm;
+	border-spacing: 5em;
 }
 
 /* ul is the menu */
